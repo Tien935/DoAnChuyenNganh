@@ -1,0 +1,13 @@
+NHẬT KÝ CÁC THAY ĐỔI VÀ QUYẾT ĐỊNH KỸ THUẬT QUAN TRỌNG TRONG DỰ ÁN
+=====================================================================
+File này dùng để ghi lại những thay đổi về công nghệ, cấu hình hoặc xử lý dữ liệu có khả năng ảnh hưởng đến kết quả của mô hình YOLOv12 so với baseline ban đầu.
+
+1. [Ngày 30/09/2026] - Chuyển hướng mục tiêu bài toán từ Object Detection sang Instance Segmentation.
+- Tình trạng gốc: Trong prompt khởi tạo, dự án được định hướng là Object Detection (nhận dạng qua Bounding Box).
+- Thay đổi: Quyết định giữ nguyên định dạng nhãn Polygon (đa giác) của tập dữ liệu để huấn luyện mô hình Instance Segmentation.
+- Đánh giá ảnh hưởng: Đây là một sự nâng cấp (upgrade) so với bài báo gốc. Mô hình Segmentation khó huấn luyện hơn và đòi hỏi tài nguyên tính toán cao hơn, nhưng kết quả đầu ra sẽ chi tiết hơn rất nhiều. Mô hình không chỉ nhận diện được rác thải nằm ở đâu mà còn phân tách được chính xác đường viền (contour) của từng vật thể rác. Khi huấn luyện, ta sẽ phải sử dụng phiên bản YOLOv12-seg (dành riêng cho Segmentation) thay vì YOLOv12 thông thường.
+
+2. [Ngày 30/09/2026] - Xử lý dữ liệu nhãn bị trộn lẫn (Mixed Annotations).
+- Tình trạng gốc: Dataset chứa lẫn lộn cả nhãn Polygon (chuẩn Segmentation) và nhãn Bounding Box (chuẩn Object Detection).
+- Thay đổi: Chạy script tự động chuyển đổi các nhãn Bounding Box (5 giá trị: class, xc, yc, w, h) thành Polygon hình chữ nhật (tạo từ 4 góc, gồm 9 giá trị).
+- Đánh giá ảnh hưởng: Giữ lại được 100% dữ liệu để huấn luyện Segmentation. Các vật thể được gán nhãn Bounding Box gốc khi dự đoán/training sẽ có mask (mặt nạ) hình chữ nhật thay vì ôm sát viền cong. Điều này có thể làm giảm nhẹ độ chính xác mAP của Segmentation Mask ở các class bị gán nhãn hỗn hợp, nhưng là bắt buộc để YOLO không báo lỗi.
