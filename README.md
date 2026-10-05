@@ -1,4 +1,4 @@
-# DỰ ÁN TỐT NGHIỆP: NHẬN DẠNG VÀ PHÂN LOẠI RÁC THẢI VỚI YOLOv12 INSTANCE SEGMENTATION
+# NHẬN DẠNG VÀ PHÂN LOẠI RÁC THẢI VỚI YOLOv12 INSTANCE SEGMENTATION
 
 ## 1. Mục tiêu Dự án
 Dự án nhằm mục đích xây dựng một hệ thống học sâu (Deep Learning) sử dụng kiến trúc YOLOv12 mới nhất để không chỉ **nhận diện (Detection)** mà còn **phân vùng điểm ảnh (Instance Segmentation)** chính xác 16 loại rác thải khác nhau. 
