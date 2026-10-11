@@ -1,0 +1,2 @@
+﻿test_images_found,images_missing_labels,objects_evaluated,threshold,correct_before_threshold,raw_accuracy_percent,accepted_objects,unknown_objects,coverage_percent,correct_accepted,accuracy_accepted_percent,overall_accuracy_with_unknown_wrong_percent
+20,0,24,0.6,15,62.5,13,11,54.166666666666664,11,84.61538461538461,45.83333333333333

@@ -1,0 +1,7 @@
+﻿true_label,total,correct_before_threshold,raw_accuracy_percent,accepted,unknown,coverage_percent,correct_accepted,accuracy_accepted_percent
+cardboard,8,2,25.0,2,6,25.0,2,100.0
+glass,0,0,,0,0,,0,
+metal,0,0,,0,0,,0,
+paper,13,12,92.3076923076923,8,5,61.53846153846154,8,100.0
+plastic,1,1,100.0,1,0,100.0,1,100.0
+trash,2,0,0.0,2,0,100.0,0,0.0
