@@ -1,0 +1,7 @@
+﻿true_class,confused_with,description,confused_count,total_true,confusion_rate_pct,avg_margin
+plastic,glass,Chai/hop nhua trong suot bi nham sang thuy tinh,10,33,30.3,0.3042
+glass,plastic,Thuy tinh bi nham sang nhua,14,400,3.5,0.2101
+metal,paper,Lon kim loai co nhan giay bi nham sang giay,0,22,0.0,0.0
+cardboard,paper,Carton bi nham sang giay,4,24,16.67,0.2345
+paper,cardboard,Giay day bi nham sang carton,7,57,12.28,0.6234
+trash,paper,Rac hon hop bi nham sang giay,9,59,15.25,0.3084

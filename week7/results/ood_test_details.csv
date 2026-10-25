@@ -1,0 +1,226 @@
+﻿image_name,data_type,ground_truth,top1_class,top1_score,top2_class,top2_score,margin,is_waste
+20260911_111322.jpg,IN_DISTRIBUTION,cardboard,paper,0.3601,cardboard,0.3593,0.0007,True
+20260911_111328.jpg,IN_DISTRIBUTION,cardboard,paper,0.3411,cardboard,0.2366,0.1045,True
+images (1).jpg,IN_DISTRIBUTION,cardboard,cardboard,0.7378,paper,0.164,0.5738,True
+images (10).jpg,IN_DISTRIBUTION,cardboard,cardboard,0.9572,paper,0.0376,0.9196,True
+images (11).jpg,IN_DISTRIBUTION,cardboard,cardboard,0.9206,paper,0.0354,0.8851,True
+images (12).jpg,IN_DISTRIBUTION,cardboard,cardboard,0.8908,paper,0.1033,0.7875,True
+images (13).jpg,IN_DISTRIBUTION,cardboard,cardboard,0.9407,paper,0.0243,0.9164,True
+images (14).jpg,IN_DISTRIBUTION,cardboard,cardboard,0.9444,paper,0.0499,0.8946,True
+images (15).jpg,IN_DISTRIBUTION,cardboard,cardboard,0.8845,paper,0.0648,0.8196,True
+images (16).jpg,IN_DISTRIBUTION,cardboard,cardboard,0.9919,paper,0.0045,0.9873,True
+images (17).jpg,IN_DISTRIBUTION,cardboard,cardboard,0.5022,paper,0.4897,0.0125,True
+images (18).jpg,IN_DISTRIBUTION,cardboard,cardboard,0.9635,trash,0.0168,0.9467,True
+images (19).jpg,IN_DISTRIBUTION,cardboard,cardboard,0.7246,paper,0.2418,0.4828,True
+images (2).jpg,IN_DISTRIBUTION,cardboard,cardboard,0.6817,paper,0.3148,0.3669,True
+images (20).jpg,IN_DISTRIBUTION,cardboard,cardboard,0.9554,paper,0.0342,0.9212,True
+images (3).jpg,IN_DISTRIBUTION,cardboard,cardboard,0.832,paper,0.1603,0.6717,True
+images (4).jpg,IN_DISTRIBUTION,cardboard,paper,0.7594,cardboard,0.2271,0.5323,True
+images (5).jpg,IN_DISTRIBUTION,cardboard,cardboard,0.8443,paper,0.1483,0.696,True
+images (6).jpg,IN_DISTRIBUTION,cardboard,cardboard,0.928,paper,0.0311,0.8968,True
+images (7).jpg,IN_DISTRIBUTION,cardboard,cardboard,0.6827,paper,0.2994,0.3833,True
+images (8).jpg,IN_DISTRIBUTION,cardboard,paper,0.6442,cardboard,0.3438,0.3004,True
+images (9).jpg,IN_DISTRIBUTION,cardboard,cardboard,0.9695,paper,0.0221,0.9475,True
+images.jpg,IN_DISTRIBUTION,cardboard,cardboard,0.5764,paper,0.4164,0.16,True
+Ảnh chụp màn hình 2026-09-27 213909.png,IN_DISTRIBUTION,cardboard,cardboard,0.9333,paper,0.0357,0.8976,True
+glass1.jpg,IN_DISTRIBUTION,glass,glass,0.8947,plastic,0.0578,0.8369,True
+glass10.jpg,IN_DISTRIBUTION,glass,glass,0.4074,plastic,0.286,0.1214,True
+glass100.jpg,IN_DISTRIBUTION,glass,glass,0.8056,plastic,0.1593,0.6463,True
+glass101.jpg,IN_DISTRIBUTION,glass,glass,0.9847,plastic,0.0143,0.9704,True
+glass102.jpg,IN_DISTRIBUTION,glass,glass,0.4624,plastic,0.3384,0.1239,True
+glass104.jpg,IN_DISTRIBUTION,glass,glass,0.7096,plastic,0.2603,0.4492,True
+glass105.jpg,IN_DISTRIBUTION,glass,glass,0.8353,plastic,0.1352,0.7,True
+glass106.jpg,IN_DISTRIBUTION,glass,glass,0.7849,plastic,0.1781,0.6068,True
+glass107.jpg,IN_DISTRIBUTION,glass,glass,0.7621,plastic,0.1421,0.62,True
+glass108.jpg,IN_DISTRIBUTION,glass,glass,0.9265,plastic,0.0496,0.8768,True
+glass109.jpg,IN_DISTRIBUTION,glass,glass,0.9124,plastic,0.0668,0.8457,True
+glass110.jpg,IN_DISTRIBUTION,glass,glass,0.7462,plastic,0.2292,0.517,True
+glass111.jpg,IN_DISTRIBUTION,glass,glass,0.9434,plastic,0.0468,0.8966,True
+glass112.jpg,IN_DISTRIBUTION,glass,glass,0.8111,metal,0.1451,0.666,True
+glass113.jpg,IN_DISTRIBUTION,glass,glass,0.9325,plastic,0.0397,0.8928,True
+glass115.jpg,IN_DISTRIBUTION,glass,metal,0.6617,glass,0.2309,0.4308,True
+glass118.jpg,IN_DISTRIBUTION,glass,glass,0.6638,plastic,0.1967,0.4671,True
+glass119.jpg,IN_DISTRIBUTION,glass,glass,0.7278,plastic,0.1064,0.6213,True
+glass121.jpg,IN_DISTRIBUTION,glass,glass,0.8495,plastic,0.1196,0.7298,True
+glass122.jpg,IN_DISTRIBUTION,glass,plastic,0.3415,glass,0.3158,0.0257,True
+glass123.jpg,IN_DISTRIBUTION,glass,glass,0.9462,plastic,0.0433,0.9029,True
+glass124.jpg,IN_DISTRIBUTION,glass,glass,0.6713,plastic,0.3108,0.3605,True
+glass125.jpg,IN_DISTRIBUTION,glass,glass,0.5297,plastic,0.1879,0.3418,True
+glass126.jpg,IN_DISTRIBUTION,glass,glass,0.3919,plastic,0.3376,0.0543,True
+glass127.jpg,IN_DISTRIBUTION,glass,glass,0.3609,metal,0.2889,0.072,True
+glass128.jpg,IN_DISTRIBUTION,glass,glass,0.6827,plastic,0.2323,0.4504,True
+glass129.jpg,IN_DISTRIBUTION,glass,glass,0.8541,metal,0.0995,0.7546,True
+glass130.jpg,IN_DISTRIBUTION,glass,glass,0.8382,plastic,0.1339,0.7043,True
+glass131.jpg,IN_DISTRIBUTION,glass,glass,0.9083,plastic,0.074,0.8343,True
+glass132.jpg,IN_DISTRIBUTION,glass,metal,0.5605,glass,0.214,0.3465,True
+2019-06-26-15-28-36-576x432.jpg,IN_DISTRIBUTION,metal,metal,0.872,trash,0.0797,0.7923,True
+20260911_193722.jpg,IN_DISTRIBUTION,metal,cardboard,0.6164,plastic,0.1281,0.4883,True
+20260911_194020.jpg,IN_DISTRIBUTION,metal,metal,0.3685,plastic,0.2534,0.1151,True
+20260911_194024.jpg,IN_DISTRIBUTION,metal,metal,0.814,plastic,0.0713,0.7427,True
+20260911_194149.jpg,IN_DISTRIBUTION,metal,metal,0.7647,glass,0.0796,0.6851,True
+20260911_194153.jpg,IN_DISTRIBUTION,metal,metal,0.5856,trash,0.3011,0.2845,True
+images (1).jpg,IN_DISTRIBUTION,metal,trash,0.4088,metal,0.2788,0.1299,True
+images (2).jpg,IN_DISTRIBUTION,metal,trash,0.4629,metal,0.3433,0.1196,True
+images (3).jpg,IN_DISTRIBUTION,metal,plastic,0.2702,cardboard,0.2031,0.0671,True
+images (4).jpg,IN_DISTRIBUTION,metal,plastic,0.4749,trash,0.2316,0.2433,True
+images (5).jpg,IN_DISTRIBUTION,metal,metal,0.9757,plastic,0.0101,0.9656,True
+images (6).jpg,IN_DISTRIBUTION,metal,trash,0.3246,metal,0.3074,0.0171,True
+images.jpg,IN_DISTRIBUTION,metal,trash,0.4393,metal,0.2487,0.1905,True
+istockphoto-1151561362-612x612 (1).jpg,IN_DISTRIBUTION,metal,metal,0.7065,paper,0.137,0.5695,True
+istockphoto-1151561362-612x612.jpg,IN_DISTRIBUTION,metal,metal,0.7065,paper,0.137,0.5695,True
+istockphoto-133993685-612x612.jpg,IN_DISTRIBUTION,metal,metal,0.962,paper,0.0129,0.9491,True
+istockphoto-2170297875-612x612.jpg,IN_DISTRIBUTION,metal,metal,0.9916,trash,0.0023,0.9893,True
+istockphoto-491962627-612x612.jpg,IN_DISTRIBUTION,metal,metal,0.8749,trash,0.0538,0.8211,True
+istockphoto-868926884-612x612.jpg,IN_DISTRIBUTION,metal,metal,0.9487,cardboard,0.0177,0.931,True
+istockphoto-950590270-612x612.jpg,IN_DISTRIBUTION,metal,metal,0.6528,plastic,0.1105,0.5423,True
+pngtree-crushed-red-aluminum-beverage-can-isolated-png-image_19364393.webp,IN_DISTRIBUTION,metal,metal,0.7689,plastic,0.0992,0.6697,True
+waste-materials-in-waste-576x432.jpg,IN_DISTRIBUTION,metal,metal,0.8074,cardboard,0.0513,0.7561,True
+1789392456401_285425636973233444_5944122805105729455_77eed46beee5042954a669e13cf558de.jpg,IN_DISTRIBUTION,paper,trash,0.4583,metal,0.22,0.2383,True
+1789392456431_285425636973233444_5944122805105729455_1f2e177a6f32f20c1ca2a55579c3d7fa.jpg,IN_DISTRIBUTION,paper,metal,0.3111,cardboard,0.3086,0.0025,True
+1789392456462_285425636973233444_5944122805105729455_8c8485b2f9e0c0e169894550f94bceb1.jpg,IN_DISTRIBUTION,paper,trash,0.3279,cardboard,0.2316,0.0963,True
+1789392456485_285425636973233444_5944122805105729455_bc8854de21bfc249237bc38dcad6bf8f.jpg,IN_DISTRIBUTION,paper,trash,0.7312,cardboard,0.0997,0.6315,True
+1789392456509_285425636973233444_5944122805105729455_ae6f6f8cd8e1cc9ef7d656ecfe4c7fed.jpg,IN_DISTRIBUTION,paper,paper,0.3625,metal,0.2277,0.1348,True
+1789392456532_285425636973233444_5944122805105729455_016caaf3a65e60cccf669fef9299cd14.jpg,IN_DISTRIBUTION,paper,paper,0.9122,trash,0.0362,0.876,True
+1789392456558_285425636973233444_5944122805105729455_326cc50f4dac2c9fe009c50c4a696c49.jpg,IN_DISTRIBUTION,paper,trash,0.6186,plastic,0.1463,0.4724,True
+1789392456580_285425636973233444_5944122805105729455_bbba01931b1a07a0e1d407963c65f350.jpg,IN_DISTRIBUTION,paper,paper,0.9519,glass,0.0201,0.9318,True
+1789392456602_285425636973233444_5944122805105729455_5c25c6da98053c985b04f7b4694db4a4.jpg,IN_DISTRIBUTION,paper,trash,0.4112,paper,0.2695,0.1417,True
+1789392456625_285425636973233444_5944122805105729455_c0f1e31ba90f687dbfb2c2819a9f4466.jpg,IN_DISTRIBUTION,paper,paper,0.9158,metal,0.0419,0.8739,True
+1789392456651_285425636973233444_5944122805105729455_cf1bb468fe80b16b196dbd4fe36f76b9.jpg,IN_DISTRIBUTION,paper,trash,0.3086,paper,0.2943,0.0143,True
+1789392456675_285425636973233444_5944122805105729455_5ea62a0537116f243b3bab17eba3341a.jpg,IN_DISTRIBUTION,paper,cardboard,0.9753,paper,0.014,0.9613,True
+53ab23c9-8129-490f-9634-de13b07019ba.webp,IN_DISTRIBUTION,paper,paper,0.9183,cardboard,0.0318,0.8864,True
+black_and_white_paper_1706eb7bd1.jpg,IN_DISTRIBUTION,paper,paper,0.9837,trash,0.0086,0.9752,True
+bundle-of-newspapers-for-recycling-silhouetted-on-white-background-AH26B3.jpg,IN_DISTRIBUTION,paper,paper,0.8823,cardboard,0.0473,0.835,True
+cardboard-boxes-various-garbage-used-260nw-2665406207.webp,IN_DISTRIBUTION,paper,cardboard,0.9445,paper,0.0294,0.915,True
+cc73289f-d4b8-4a91-8238-dacb4d39e1e9.webp,IN_DISTRIBUTION,paper,paper,0.8777,trash,0.0525,0.8252,True
+images (1).jpg,IN_DISTRIBUTION,paper,paper,0.9321,trash,0.0381,0.894,True
+images (10).jpg,IN_DISTRIBUTION,paper,paper,0.9023,cardboard,0.0682,0.8341,True
+images (11).jpg,IN_DISTRIBUTION,paper,paper,0.8633,trash,0.0636,0.7997,True
+images (12).jpg,IN_DISTRIBUTION,paper,paper,0.9073,cardboard,0.0706,0.8367,True
+images (2).jpg,IN_DISTRIBUTION,paper,paper,0.9055,trash,0.0507,0.8548,True
+images (3).jpg,IN_DISTRIBUTION,paper,paper,0.9195,cardboard,0.0618,0.8577,True
+images (4).jpg,IN_DISTRIBUTION,paper,paper,0.8106,cardboard,0.1447,0.6659,True
+images (5).jpg,IN_DISTRIBUTION,paper,cardboard,0.5344,paper,0.4154,0.1189,True
+images (6).jpg,IN_DISTRIBUTION,paper,paper,0.9142,cardboard,0.0791,0.8351,True
+images (7).jpg,IN_DISTRIBUTION,paper,paper,0.9818,cardboard,0.009,0.9728,True
+images (8).jpg,IN_DISTRIBUTION,paper,paper,0.9679,cardboard,0.0183,0.9496,True
+images (9).jpg,IN_DISTRIBUTION,paper,paper,0.6573,cardboard,0.2909,0.3663,True
+images.jpg,IN_DISTRIBUTION,paper,paper,0.9773,trash,0.0089,0.9684,True
+1789393039233_285425636973233444_5944122805105729455_8627e57488d3d10ea031fa30870cdab8.jpg,IN_DISTRIBUTION,plastic,plastic,0.4961,glass,0.3495,0.1465,True
+1789393039259_285425636973233444_5944122805105729455_bbe96c43ab172fea68b68c1de831604b.jpg,IN_DISTRIBUTION,plastic,plastic,0.5655,trash,0.3037,0.2618,True
+1789393039281_285425636973233444_5944122805105729455_14bb1a097206362bf44434aaeddc7056.jpg,IN_DISTRIBUTION,plastic,metal,0.6538,plastic,0.1079,0.5459,True
+1789393039305_285425636973233444_5944122805105729455_2cc12b5220cc65f60d946e953b5ea1e1.jpg,IN_DISTRIBUTION,plastic,glass,0.7497,plastic,0.2199,0.5298,True
+1789393039332_285425636973233444_5944122805105729455_5464ff35d56aa025962d575f18590103.jpg,IN_DISTRIBUTION,plastic,plastic,0.4046,glass,0.3306,0.074,True
+1789393039360_285425636973233444_5944122805105729455_a20e8405ab5007eb730db989b75be53a.jpg,IN_DISTRIBUTION,plastic,glass,0.9365,plastic,0.0392,0.8973,True
+1789393039382_285425636973233444_5944122805105729455_ae2ed7149c85e482b4a4db571341dcae.jpg,IN_DISTRIBUTION,plastic,glass,0.6091,metal,0.1751,0.4341,True
+20260911_102136.jpg,IN_DISTRIBUTION,plastic,cardboard,0.4047,metal,0.2009,0.2038,True
+20260911_102139.jpg,IN_DISTRIBUTION,plastic,metal,0.3798,plastic,0.2502,0.1296,True
+20260911_102338.jpg,IN_DISTRIBUTION,plastic,glass,0.4535,plastic,0.4266,0.0268,True
+20260911_102342.jpg,IN_DISTRIBUTION,plastic,glass,0.316,plastic,0.3147,0.0013,True
+20260911_111236.jpg,IN_DISTRIBUTION,plastic,plastic,0.6842,glass,0.1329,0.5513,True
+20260911_111251.jpg,IN_DISTRIBUTION,plastic,glass,0.4843,plastic,0.3399,0.1444,True
+20260911_193753.jpg,IN_DISTRIBUTION,plastic,plastic,0.7639,glass,0.0963,0.6676,True
+20260911_194128.jpg,IN_DISTRIBUTION,plastic,metal,0.6268,plastic,0.1149,0.5119,True
+20260911_194137.jpg,IN_DISTRIBUTION,plastic,metal,0.7902,glass,0.062,0.7282,True
+20260911_194140.jpg,IN_DISTRIBUTION,plastic,metal,0.4647,glass,0.4446,0.0201,True
+20260911_194218.jpg,IN_DISTRIBUTION,plastic,metal,0.8076,trash,0.0612,0.7464,True
+20260911_194225.jpg,IN_DISTRIBUTION,plastic,metal,0.419,glass,0.3321,0.0868,True
+20260911_194234.jpg,IN_DISTRIBUTION,plastic,metal,0.6946,plastic,0.1429,0.5517,True
+20260911_194239.jpg,IN_DISTRIBUTION,plastic,metal,0.7952,glass,0.0599,0.7353,True
+20260911_194242.jpg,IN_DISTRIBUTION,plastic,metal,0.5578,glass,0.1519,0.4058,True
+20260911_194245.jpg,IN_DISTRIBUTION,plastic,metal,0.6214,cardboard,0.2129,0.4084,True
+20260911_194254.jpg,IN_DISTRIBUTION,plastic,plastic,0.457,trash,0.3536,0.1034,True
+20260911_194257.jpg,IN_DISTRIBUTION,plastic,plastic,0.611,glass,0.1582,0.4528,True
+20260911_194300.jpg,IN_DISTRIBUTION,plastic,glass,0.4926,plastic,0.3044,0.1881,True
+20260911_194313.jpg,IN_DISTRIBUTION,plastic,metal,0.4072,trash,0.2182,0.189,True
+20260911_194318.jpg,IN_DISTRIBUTION,plastic,metal,0.3332,trash,0.2383,0.0949,True
+20260912_125956.jpg,IN_DISTRIBUTION,plastic,glass,0.438,metal,0.2463,0.1917,True
+20260912_130001.jpg,IN_DISTRIBUTION,plastic,glass,0.5158,metal,0.1946,0.3212,True
+1789392492874_285425636973233444_5944122805105729455_c3dba5489d526bb8fe562d37a6bb7196.jpg,IN_DISTRIBUTION,trash,trash,0.2868,paper,0.2829,0.0039,True
+1789392492897_285425636973233444_5944122805105729455_c2c0e89f8303c51a186c863a290c047a.jpg,IN_DISTRIBUTION,trash,metal,0.5991,trash,0.2096,0.3895,True
+1789392492922_285425636973233444_5944122805105729455_310bf1bf99cd8f6478929a7a8f237fa8.jpg,IN_DISTRIBUTION,trash,glass,0.5356,plastic,0.3825,0.1531,True
+1789392492945_285425636973233444_5944122805105729455_7f67b588032d1497be043ff6b3b2e993.jpg,IN_DISTRIBUTION,trash,trash,0.4971,metal,0.2252,0.2719,True
+1789392492967_285425636973233444_5944122805105729455_2f4ed85584bf2846114dbd5c59144242.jpg,IN_DISTRIBUTION,trash,plastic,0.3625,metal,0.2442,0.1182,True
+1789392492989_285425636973233444_5944122805105729455_84ebd5fe47e1285fe188fc1522dcdaba.jpg,IN_DISTRIBUTION,trash,trash,0.8124,plastic,0.0834,0.729,True
+1789392493014_285425636973233444_5944122805105729455_e38d77ca98121376ccad82eb2bb53b95.jpg,IN_DISTRIBUTION,trash,plastic,0.4315,trash,0.1699,0.2616,True
+1789392493037_285425636973233444_5944122805105729455_6394096982a892eb043bbc8e6c1d5f6a.jpg,IN_DISTRIBUTION,trash,cardboard,0.6199,trash,0.2206,0.3993,True
+1789392493062_285425636973233444_5944122805105729455_a57ef3ed4328db91634f883b303631b7.jpg,IN_DISTRIBUTION,trash,trash,0.4187,paper,0.2045,0.2143,True
+1789392493089_285425636973233444_5944122805105729455_6c3971b657b926968a0aa66e448fac04.jpg,IN_DISTRIBUTION,trash,trash,0.3601,plastic,0.3459,0.0141,True
+1789392493113_285425636973233444_5944122805105729455_bad4d34f012cf89b6e886052ce937679.jpg,IN_DISTRIBUTION,trash,trash,0.4946,paper,0.2019,0.2927,True
+1789392493136_285425636973233444_5944122805105729455_82ebb8393779fb71a478efbf2f0a07c7.jpg,IN_DISTRIBUTION,trash,trash,0.2912,plastic,0.2427,0.0486,True
+1789392493164_285425636973233444_5944122805105729455_7fc3940c49c3d68b87626c529f21c991.jpg,IN_DISTRIBUTION,trash,plastic,0.3993,trash,0.2288,0.1705,True
+1789392493186_285425636973233444_5944122805105729455_4e64b7993dd97cdd2d6942474ba48fe5.jpg,IN_DISTRIBUTION,trash,trash,0.5406,cardboard,0.1733,0.3673,True
+1789392493209_285425636973233444_5944122805105729455_852133de602dfdf1502122588b7c07d0.jpg,IN_DISTRIBUTION,trash,trash,0.3128,plastic,0.2621,0.0507,True
+1789392493231_285425636973233444_5944122805105729455_9bec4fe5561354037679c7394fb8412f.jpg,IN_DISTRIBUTION,trash,trash,0.5636,plastic,0.254,0.3096,True
+1789392493253_285425636973233444_5944122805105729455_039b60161ec921364a367350d55f5ba3.jpg,IN_DISTRIBUTION,trash,glass,0.7306,plastic,0.2535,0.4771,True
+1789392493275_285425636973233444_5944122805105729455_1fc86f3cd63b32149e869041e366cdfe.jpg,IN_DISTRIBUTION,trash,trash,0.6354,plastic,0.1306,0.5048,True
+1789392493302_285425636973233444_5944122805105729455_3e3b9727ae26585ce3352884bfb69f07.jpg,IN_DISTRIBUTION,trash,trash,0.6573,plastic,0.2054,0.452,True
+1789392493324_285425636973233444_5944122805105729455_10f28b19db9731b0a24f75309ca853fa.jpg,IN_DISTRIBUTION,trash,plastic,0.3258,metal,0.2774,0.0484,True
+1789392493347_285425636973233444_5944122805105729455_f60f27f7226e9a19a5691337d807d4f6.jpg,IN_DISTRIBUTION,trash,trash,0.4975,cardboard,0.1419,0.3556,True
+1789392493369_285425636973233444_5944122805105729455_78acc3724f3931f391fe61d014896235.jpg,IN_DISTRIBUTION,trash,paper,0.2923,glass,0.2139,0.0784,True
+1789392493391_285425636973233444_5944122805105729455_a6819157f39cefec76830d0fb70e8c11.jpg,IN_DISTRIBUTION,trash,plastic,0.7169,trash,0.1334,0.5835,True
+1789392493413_285425636973233444_5944122805105729455_0289adde37cba90b89e22bfe6f08f598.jpg,IN_DISTRIBUTION,trash,glass,0.6783,metal,0.2211,0.4572,True
+1789392493436_285425636973233444_5944122805105729455_959183eac705976110dc1d07584fd1d7.jpg,IN_DISTRIBUTION,trash,trash,0.547,paper,0.1297,0.4173,True
+1789392493458_285425636973233444_5944122805105729455_db069f1b348b6c676427f2018ce3fbc9.jpg,IN_DISTRIBUTION,trash,trash,0.7161,metal,0.1199,0.5962,True
+1789392493480_285425636973233444_5944122805105729455_fbe4ced385a228041f9b81f8391dbfe6.jpg,IN_DISTRIBUTION,trash,paper,0.4844,trash,0.2818,0.2027,True
+1789392493502_285425636973233444_5944122805105729455_3e3cc5a579c230765f2dcb00258ce3e3.jpg,IN_DISTRIBUTION,trash,trash,0.425,metal,0.1976,0.2274,True
+1789392493525_285425636973233444_5944122805105729455_b80ab3c16a3ea8ffbef021cc49519de9.jpg,IN_DISTRIBUTION,trash,paper,0.6087,trash,0.1144,0.4944,True
+1789392493546_285425636973233444_5944122805105729455_e86c02e19ca3cd8a0d8e83c5e9acec39.jpg,IN_DISTRIBUTION,trash,plastic,0.5202,glass,0.1792,0.341,True
+nonwaste_car.jpg,OUT_OF_DISTRIBUTION,non_waste_or_other,plastic,0.2668,glass,0.2655,0.0013,False
+nonwaste_cat.jpg,OUT_OF_DISTRIBUTION,non_waste_or_other,trash,0.2143,paper,0.1804,0.0339,False
+nonwaste_chair.jpg,OUT_OF_DISTRIBUTION,non_waste_or_other,trash,0.2408,metal,0.2273,0.0134,False
+nonwaste_desk_setup.jpg,OUT_OF_DISTRIBUTION,non_waste_or_other,trash,0.3488,metal,0.2151,0.1338,False
+nonwaste_dog.jpg,OUT_OF_DISTRIBUTION,non_waste_or_other,plastic,0.3393,glass,0.2492,0.0901,False
+nonwaste_human_face.jpg,OUT_OF_DISTRIBUTION,non_waste_or_other,glass,0.4034,plastic,0.3503,0.0531,False
+nonwaste_laptop.jpg,OUT_OF_DISTRIBUTION,non_waste_or_other,plastic,0.2904,trash,0.2879,0.0025,False
+nonwaste_plant.jpg,OUT_OF_DISTRIBUTION,non_waste_or_other,plastic,0.5685,paper,0.1238,0.4448,False
+nonwaste_smartphone.jpg,OUT_OF_DISTRIBUTION,non_waste_or_other,glass,0.3875,trash,0.255,0.1325,False
+nonwaste_wrist_watch.jpg,OUT_OF_DISTRIBUTION,non_waste_or_other,trash,0.4146,paper,0.2051,0.2096,False
+otherwaste_apple_core_organic.jpg,OUT_OF_DISTRIBUTION,non_waste_or_other,plastic,0.6308,trash,0.1506,0.4803,False
+otherwaste_banana_peel_organic.jpg,OUT_OF_DISTRIBUTION,non_waste_or_other,plastic,0.6005,trash,0.1767,0.4238,False
+otherwaste_battery_ewaste.jpg,OUT_OF_DISTRIBUTION,non_waste_or_other,plastic,0.4674,glass,0.1682,0.2992,False
+otherwaste_circuit_board_ewaste.jpg,OUT_OF_DISTRIBUTION,non_waste_or_other,trash,0.4993,paper,0.1607,0.3386,False
+otherwaste_clothing_shirt_textile.jpg,OUT_OF_DISTRIBUTION,non_waste_or_other,plastic,0.3725,trash,0.3061,0.0663,False
+otherwaste_medical_mask.jpg,OUT_OF_DISTRIBUTION,non_waste_or_other,metal,0.3045,trash,0.2612,0.0432,False
+otherwaste_shoes_textile.jpg,OUT_OF_DISTRIBUTION,non_waste_or_other,plastic,0.5313,glass,0.1984,0.3329,False
+real_airplane.jpg,OUT_OF_DISTRIBUTION,non_waste_or_other,metal,0.25,trash,0.2047,0.0453,False
+real_apple_fresh.jpg,OUT_OF_DISTRIBUTION,non_waste_or_other,metal,0.2119,paper,0.1699,0.0419,False
+real_backpack.jpg,OUT_OF_DISTRIBUTION,non_waste_or_other,glass,0.3306,plastic,0.24,0.0906,False
+real_banana_fresh.jpg,OUT_OF_DISTRIBUTION,non_waste_or_other,metal,0.2748,plastic,0.2578,0.017,False
+real_bicycle.jpg,OUT_OF_DISTRIBUTION,non_waste_or_other,metal,0.3546,trash,0.2088,0.1458,False
+real_bird.jpg,OUT_OF_DISTRIBUTION,non_waste_or_other,paper,0.3665,glass,0.2021,0.1644,False
+real_bookshelf.jpg,OUT_OF_DISTRIBUTION,non_waste_or_other,metal,0.363,glass,0.2343,0.1288,False
+real_building_facade.jpg,OUT_OF_DISTRIBUTION,non_waste_or_other,trash,0.2948,metal,0.2869,0.008,False
+real_cat.jpg,OUT_OF_DISTRIBUTION,non_waste_or_other,plastic,0.3642,glass,0.1923,0.172,False
+real_child_playing.jpg,OUT_OF_DISTRIBUTION,non_waste_or_other,plastic,0.2925,paper,0.2828,0.0097,False
+real_city_street.jpg,OUT_OF_DISTRIBUTION,non_waste_or_other,plastic,0.596,glass,0.1164,0.4796,False
+real_coffee_cup_clean.jpg,OUT_OF_DISTRIBUTION,non_waste_or_other,metal,0.274,paper,0.2139,0.0601,False
+real_computer_keyboard.jpg,OUT_OF_DISTRIBUTION,non_waste_or_other,metal,0.2752,trash,0.2151,0.0602,False
+real_dog.jpg,OUT_OF_DISTRIBUTION,non_waste_or_other,plastic,0.2634,glass,0.1898,0.0736,False
+real_flower.jpg,OUT_OF_DISTRIBUTION,non_waste_or_other,paper,0.2719,metal,0.216,0.056,False
+real_forest_tree.jpg,OUT_OF_DISTRIBUTION,non_waste_or_other,paper,0.3672,cardboard,0.2686,0.0986,False
+real_horse.jpg,OUT_OF_DISTRIBUTION,non_waste_or_other,metal,0.3215,paper,0.2303,0.0912,False
+real_human_portrait.jpg,OUT_OF_DISTRIBUTION,non_waste_or_other,paper,0.2167,plastic,0.2027,0.014,False
+real_laptop.jpg,OUT_OF_DISTRIBUTION,non_waste_or_other,metal,0.3345,glass,0.2485,0.086,False
+real_living_room.jpg,OUT_OF_DISTRIBUTION,non_waste_or_other,metal,0.7601,trash,0.1284,0.6317,False
+real_mountain.jpg,OUT_OF_DISTRIBUTION,non_waste_or_other,plastic,0.4007,glass,0.2929,0.1078,False
+real_night_sky.jpg,OUT_OF_DISTRIBUTION,non_waste_or_other,plastic,0.2688,trash,0.2072,0.0616,False
+real_ocean_beach.jpg,OUT_OF_DISTRIBUTION,non_waste_or_other,metal,0.4856,glass,0.1863,0.2993,False
+real_office_desk.jpg,OUT_OF_DISTRIBUTION,non_waste_or_other,cardboard,0.4877,trash,0.1509,0.3369,False
+real_running_shoe.jpg,OUT_OF_DISTRIBUTION,non_waste_or_other,trash,0.3964,glass,0.1746,0.2218,False
+real_smartphone.jpg,OUT_OF_DISTRIBUTION,non_waste_or_other,metal,0.4825,trash,0.1975,0.285,False
+real_sports_car.jpg,OUT_OF_DISTRIBUTION,non_waste_or_other,metal,0.4315,glass,0.3213,0.1102,False
+real_t_shirt_clean.jpg,OUT_OF_DISTRIBUTION,non_waste_or_other,metal,0.3925,glass,0.2279,0.1646,False
+real_wooden_table.jpg,OUT_OF_DISTRIBUTION,non_waste_or_other,paper,0.3464,metal,0.3041,0.0423,False
+real_wrist_watch.jpg,OUT_OF_DISTRIBUTION,non_waste_or_other,metal,0.4193,cardboard,0.2015,0.2178,False
+syn_checkerboard.jpg,OUT_OF_DISTRIBUTION,non_waste_or_other,metal,0.2953,trash,0.2136,0.0817,False
+syn_gaussian_noise.jpg,OUT_OF_DISTRIBUTION,non_waste_or_other,plastic,0.2576,glass,0.2193,0.0383,False
+syn_gradient.jpg,OUT_OF_DISTRIBUTION,non_waste_or_other,trash,0.2207,metal,0.2083,0.0124,False
+syn_pure_black.jpg,OUT_OF_DISTRIBUTION,non_waste_or_other,glass,0.2909,metal,0.2349,0.056,False
+syn_pure_grey.jpg,OUT_OF_DISTRIBUTION,non_waste_or_other,metal,0.2724,glass,0.2125,0.0598,False
+syn_pure_white.jpg,OUT_OF_DISTRIBUTION,non_waste_or_other,trash,0.3692,paper,0.146,0.2232,False
+synthetic_checkerboard.jpg,OUT_OF_DISTRIBUTION,non_waste_or_other,paper,0.2657,metal,0.1896,0.076,False
+synthetic_color_gradient.jpg,OUT_OF_DISTRIBUTION,non_waste_or_other,trash,0.2347,paper,0.2277,0.007,False
+synthetic_gaussian_noise.jpg,OUT_OF_DISTRIBUTION,non_waste_or_other,glass,0.3406,metal,0.1873,0.1533,False
+synthetic_pure_black.jpg,OUT_OF_DISTRIBUTION,non_waste_or_other,glass,0.2909,metal,0.2349,0.056,False
+synthetic_pure_grey.jpg,OUT_OF_DISTRIBUTION,non_waste_or_other,metal,0.2724,glass,0.2125,0.0598,False
+synthetic_pure_white.jpg,OUT_OF_DISTRIBUTION,non_waste_or_other,trash,0.3692,paper,0.146,0.2232,False

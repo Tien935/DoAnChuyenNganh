@@ -1,0 +1,167 @@
+﻿image_name,ground_truth,P1_Single_Short_pred,P1_Single_Short_score,P2_Template_Standard_pred,P2_Template_Standard_score,P3_Descriptive_3_pred,P3_Descriptive_3_score,P4_Ensemble_5_pred,P4_Ensemble_5_score,P5_Contextual_Distracted_pred,P5_Contextual_Distracted_score
+20260911_111322.jpg,cardboard,paper,0.6611,paper,0.3976,plastic,0.3844,paper,0.3601,cardboard,0.769
+20260911_111328.jpg,cardboard,paper,0.5265,paper,0.4472,plastic,0.3604,paper,0.3411,cardboard,0.6851
+images (1).jpg,cardboard,cardboard,0.8716,cardboard,0.7128,cardboard,0.9928,cardboard,0.7378,paper,0.6198
+images (10).jpg,cardboard,cardboard,0.989,cardboard,0.9592,cardboard,0.9969,cardboard,0.9572,cardboard,0.9977
+images (11).jpg,cardboard,cardboard,0.9786,cardboard,0.9694,cardboard,0.982,cardboard,0.9206,cardboard,0.9891
+images (12).jpg,cardboard,cardboard,0.976,cardboard,0.9237,cardboard,0.9926,cardboard,0.8908,cardboard,0.9813
+images (13).jpg,cardboard,cardboard,0.9869,cardboard,0.9385,cardboard,0.9944,cardboard,0.9407,cardboard,0.995
+images (14).jpg,cardboard,cardboard,0.9879,cardboard,0.9483,cardboard,0.9953,cardboard,0.9444,cardboard,0.9768
+images (15).jpg,cardboard,cardboard,0.9764,cardboard,0.8942,cardboard,0.9938,cardboard,0.8845,cardboard,0.9285
+images (16).jpg,cardboard,cardboard,0.9985,cardboard,0.9959,cardboard,0.9993,cardboard,0.9919,cardboard,0.9997
+images (17).jpg,cardboard,cardboard,0.9513,cardboard,0.687,cardboard,0.9759,cardboard,0.5022,cardboard,0.8908
+images (18).jpg,cardboard,cardboard,0.9862,cardboard,0.9389,cardboard,0.9912,cardboard,0.9635,cardboard,0.9985
+images (19).jpg,cardboard,cardboard,0.7536,cardboard,0.6382,cardboard,0.7894,cardboard,0.7246,cardboard,0.6219
+images (2).jpg,cardboard,cardboard,0.9149,cardboard,0.7758,cardboard,0.9941,cardboard,0.6817,cardboard,0.5281
+images (20).jpg,cardboard,cardboard,0.9945,cardboard,0.935,cardboard,0.9975,cardboard,0.9554,cardboard,0.9983
+images (3).jpg,cardboard,cardboard,0.9649,cardboard,0.7551,cardboard,0.9928,cardboard,0.832,cardboard,0.7104
+images (4).jpg,cardboard,cardboard,0.6873,paper,0.742,cardboard,0.7701,paper,0.7594,paper,0.729
+images (5).jpg,cardboard,cardboard,0.9796,cardboard,0.7891,cardboard,0.9937,cardboard,0.8443,cardboard,0.9959
+images (6).jpg,cardboard,cardboard,0.9834,cardboard,0.9228,cardboard,0.9757,cardboard,0.928,cardboard,0.9531
+images (7).jpg,cardboard,cardboard,0.8769,cardboard,0.7112,cardboard,0.9732,cardboard,0.6827,cardboard,0.9134
+images (8).jpg,cardboard,cardboard,0.5408,paper,0.6333,cardboard,0.7167,paper,0.6442,cardboard,0.7346
+images (9).jpg,cardboard,cardboard,0.9975,cardboard,0.9664,cardboard,0.9994,cardboard,0.9695,cardboard,0.9959
+images.jpg,cardboard,cardboard,0.8152,cardboard,0.7636,cardboard,0.9563,cardboard,0.5764,cardboard,0.5618
+Ảnh chụp màn hình 2026-09-27 213909.png,cardboard,cardboard,0.9818,cardboard,0.8877,cardboard,0.9867,cardboard,0.9333,cardboard,0.9857
+glass1.jpg,glass,glass,0.723,glass,0.8973,glass,0.5841,glass,0.8947,glass,0.907
+glass10.jpg,glass,plastic,0.2749,glass,0.2525,plastic,0.6454,glass,0.4074,plastic,0.6873
+glass100.jpg,glass,glass,0.428,glass,0.7732,plastic,0.5108,glass,0.8056,glass,0.8803
+glass101.jpg,glass,glass,0.9154,glass,0.9865,glass,0.8672,glass,0.9847,glass,0.9622
+glass102.jpg,glass,plastic,0.4961,glass,0.4538,plastic,0.7644,glass,0.4624,glass,0.6146
+glass104.jpg,glass,plastic,0.5822,glass,0.7166,glass,0.7283,glass,0.7096,glass,0.6465
+glass105.jpg,glass,glass,0.4498,glass,0.7342,plastic,0.578,glass,0.8353,glass,0.8026
+glass106.jpg,glass,glass,0.5954,glass,0.817,glass,0.6832,glass,0.7849,glass,0.7457
+glass107.jpg,glass,glass,0.5503,glass,0.6508,glass,0.6424,glass,0.7621,glass,0.9291
+glass108.jpg,glass,glass,0.7922,glass,0.9374,glass,0.946,glass,0.9265,glass,0.5239
+glass109.jpg,glass,glass,0.6409,glass,0.9063,glass,0.9125,glass,0.9124,plastic,0.4831
+glass110.jpg,glass,plastic,0.7438,glass,0.7335,glass,0.895,glass,0.7462,glass,0.8879
+glass111.jpg,glass,glass,0.8307,glass,0.9689,glass,0.8757,glass,0.9434,plastic,0.6926
+glass112.jpg,glass,glass,0.6524,glass,0.8608,glass,0.955,glass,0.8111,plastic,0.3949
+glass113.jpg,glass,glass,0.8394,glass,0.9152,plastic,0.5079,glass,0.9325,glass,0.987
+glass115.jpg,glass,metal,0.6862,metal,0.5083,metal,0.7086,metal,0.6617,plastic,0.4216
+glass118.jpg,glass,glass,0.4194,glass,0.499,plastic,0.7162,glass,0.6638,glass,0.9628
+glass119.jpg,glass,paper,0.4895,glass,0.4704,glass,0.5315,glass,0.7278,glass,0.8696
+glass121.jpg,glass,glass,0.4801,glass,0.8062,plastic,0.6072,glass,0.8495,glass,0.899
+glass122.jpg,glass,plastic,0.4564,paper,0.2532,plastic,0.8994,plastic,0.3415,plastic,0.8185
+glass123.jpg,glass,glass,0.7841,glass,0.9597,glass,0.9824,glass,0.9462,glass,0.6233
+glass124.jpg,glass,plastic,0.8602,glass,0.8064,glass,0.5909,glass,0.6713,plastic,0.6973
+glass125.jpg,glass,cardboard,0.3132,cardboard,0.6048,glass,0.4943,glass,0.5297,glass,0.9082
+glass126.jpg,glass,paper,0.5455,paper,0.588,plastic,0.8928,glass,0.3919,glass,0.802
+glass127.jpg,glass,metal,0.2985,glass,0.4658,plastic,0.7244,glass,0.3609,plastic,0.6596
+glass128.jpg,glass,plastic,0.5729,glass,0.6767,glass,0.6943,glass,0.6827,glass,0.7968
+glass129.jpg,glass,metal,0.5102,glass,0.8303,glass,0.5249,glass,0.8541,glass,0.9223
+glass130.jpg,glass,glass,0.7034,glass,0.8251,plastic,0.5407,glass,0.8382,glass,0.9972
+glass131.jpg,glass,glass,0.7181,glass,0.9278,glass,0.8939,glass,0.9083,glass,0.8928
+glass132.jpg,glass,metal,0.4609,metal,0.4683,metal,0.5198,metal,0.5605,plastic,0.4364
+2019-06-26-15-28-36-576x432.jpg,metal,trash,0.6003,metal,0.4685,metal,0.9941,metal,0.872,metal,0.9975
+20260911_193722.jpg,metal,cardboard,0.4356,cardboard,0.6754,plastic,0.6662,cardboard,0.6164,cardboard,0.6176
+20260911_194020.jpg,metal,metal,0.3893,metal,0.3022,plastic,0.3358,metal,0.3685,plastic,0.6387
+20260911_194024.jpg,metal,metal,0.8518,metal,0.7563,metal,0.6034,metal,0.814,plastic,0.682
+20260911_194149.jpg,metal,metal,0.7896,metal,0.6867,metal,0.5722,metal,0.7647,trash,0.3953
+20260911_194153.jpg,metal,metal,0.6763,metal,0.4863,metal,0.5181,metal,0.5856,trash,0.7463
+images (1).jpg,metal,trash,0.8059,trash,0.5065,metal,0.7532,trash,0.4088,metal,0.7907
+images (2).jpg,metal,trash,0.5879,metal,0.3999,trash,0.4795,trash,0.4629,metal,0.9807
+images (3).jpg,metal,trash,0.5471,cardboard,0.4043,metal,0.5604,plastic,0.2702,metal,0.9598
+images (4).jpg,metal,trash,0.5405,plastic,0.363,plastic,0.7018,plastic,0.4749,metal,0.9322
+images (5).jpg,metal,metal,0.7409,metal,0.9782,metal,0.9979,metal,0.9757,metal,0.9402
+images (6).jpg,metal,trash,0.63,metal,0.4729,metal,0.8584,trash,0.3246,metal,0.9593
+images.jpg,metal,plastic,0.5825,metal,0.3343,metal,0.5652,trash,0.4393,metal,0.5768
+istockphoto-1151561362-612x612 (1).jpg,metal,metal,0.436,metal,0.6889,metal,0.6378,metal,0.7065,cardboard,0.5324
+istockphoto-1151561362-612x612.jpg,metal,metal,0.436,metal,0.6889,metal,0.6378,metal,0.7065,cardboard,0.5324
+istockphoto-133993685-612x612.jpg,metal,metal,0.8881,metal,0.9745,metal,0.9924,metal,0.962,paper,0.8792
+istockphoto-2170297875-612x612.jpg,metal,metal,0.9876,metal,0.9947,metal,0.9918,metal,0.9916,paper,0.3863
+istockphoto-491962627-612x612.jpg,metal,plastic,0.478,metal,0.9502,metal,0.9875,metal,0.8749,metal,0.7341
+istockphoto-868926884-612x612.jpg,metal,metal,0.7332,metal,0.961,metal,0.7901,metal,0.9487,trash,0.5022
+istockphoto-950590270-612x612.jpg,metal,trash,0.3274,metal,0.3625,metal,0.9664,metal,0.6528,metal,0.9906
+pngtree-crushed-red-aluminum-beverage-can-isolated-png-image_19364393.webp,metal,trash,0.4315,metal,0.5376,metal,0.9838,metal,0.7689,metal,0.9773
+waste-materials-in-waste-576x432.jpg,metal,plastic,0.4369,metal,0.8473,metal,0.8488,metal,0.8074,trash,0.509
+1789392456401_285425636973233444_5944122805105729455_77eed46beee5042954a669e13cf558de.jpg,paper,trash,0.6421,trash,0.5499,metal,0.6123,trash,0.4583,trash,0.7468
+1789392456431_285425636973233444_5944122805105729455_1f2e177a6f32f20c1ca2a55579c3d7fa.jpg,paper,trash,0.3828,cardboard,0.4072,cardboard,0.4478,metal,0.3111,trash,0.3751
+1789392456462_285425636973233444_5944122805105729455_8c8485b2f9e0c0e169894550f94bceb1.jpg,paper,trash,0.3462,cardboard,0.4408,cardboard,0.5124,trash,0.3279,trash,0.779
+1789392456485_285425636973233444_5944122805105729455_bc8854de21bfc249237bc38dcad6bf8f.jpg,paper,trash,0.7423,trash,0.77,trash,0.9025,trash,0.7312,trash,0.9765
+1789392456509_285425636973233444_5944122805105729455_ae6f6f8cd8e1cc9ef7d656ecfe4c7fed.jpg,paper,cardboard,0.3424,paper,0.5478,cardboard,0.3089,paper,0.3625,trash,0.4632
+1789392456532_285425636973233444_5944122805105729455_016caaf3a65e60cccf669fef9299cd14.jpg,paper,paper,0.9423,paper,0.9377,paper,0.8591,paper,0.9122,trash,0.719
+1789392456558_285425636973233444_5944122805105729455_326cc50f4dac2c9fe009c50c4a696c49.jpg,paper,trash,0.7656,trash,0.6824,trash,0.7132,trash,0.6186,trash,0.9625
+1789392456580_285425636973233444_5944122805105729455_bbba01931b1a07a0e1d407963c65f350.jpg,paper,paper,0.9686,paper,0.9827,paper,0.9149,paper,0.9519,paper,0.8924
+1789392456602_285425636973233444_5944122805105729455_5c25c6da98053c985b04f7b4694db4a4.jpg,paper,trash,0.3959,trash,0.671,trash,0.6227,trash,0.4112,trash,0.9649
+1789392456625_285425636973233444_5944122805105729455_c0f1e31ba90f687dbfb2c2819a9f4466.jpg,paper,paper,0.9292,paper,0.9742,paper,0.9383,paper,0.9158,paper,0.9472
+1789392456651_285425636973233444_5944122805105729455_cf1bb468fe80b16b196dbd4fe36f76b9.jpg,paper,plastic,0.4043,trash,0.6942,trash,0.6142,trash,0.3086,trash,0.9291
+1789392456675_285425636973233444_5944122805105729455_5ea62a0537116f243b3bab17eba3341a.jpg,paper,cardboard,0.9932,cardboard,0.9699,cardboard,0.9957,cardboard,0.9753,cardboard,0.9984
+53ab23c9-8129-490f-9634-de13b07019ba.webp,paper,paper,0.9787,paper,0.9602,paper,0.9406,paper,0.9183,paper,0.7894
+black_and_white_paper_1706eb7bd1.jpg,paper,paper,0.9906,paper,0.9864,paper,0.9855,paper,0.9837,paper,0.9942
+bundle-of-newspapers-for-recycling-silhouetted-on-white-background-AH26B3.jpg,paper,paper,0.9363,paper,0.9115,paper,0.9279,paper,0.8823,paper,0.5879
+cardboard-boxes-various-garbage-used-260nw-2665406207.webp,paper,cardboard,0.9744,cardboard,0.9704,cardboard,0.9928,cardboard,0.9445,cardboard,0.9976
+cc73289f-d4b8-4a91-8238-dacb4d39e1e9.webp,paper,paper,0.9712,paper,0.9313,paper,0.9321,paper,0.8777,paper,0.5739
+images (1).jpg,paper,paper,0.9795,paper,0.9501,paper,0.9264,paper,0.9321,trash,0.4825
+images (10).jpg,paper,paper,0.9456,paper,0.8956,paper,0.9898,paper,0.9023,paper,0.5956
+images (11).jpg,paper,paper,0.9893,paper,0.918,paper,0.9804,paper,0.8633,trash,0.4335
+images (12).jpg,paper,paper,0.944,paper,0.9364,paper,0.9597,paper,0.9073,paper,0.7095
+images (2).jpg,paper,paper,0.9773,paper,0.9537,paper,0.9268,paper,0.9055,paper,0.7391
+images (3).jpg,paper,paper,0.814,paper,0.8691,paper,0.8234,paper,0.9195,paper,0.9217
+images (4).jpg,paper,paper,0.6589,paper,0.7471,paper,0.6736,paper,0.8106,paper,0.7375
+images (5).jpg,paper,cardboard,0.8571,cardboard,0.7615,cardboard,0.7615,cardboard,0.5344,cardboard,0.8973
+images (6).jpg,paper,paper,0.5108,paper,0.834,cardboard,0.6127,paper,0.9142,paper,0.7216
+images (7).jpg,paper,paper,0.9844,paper,0.9833,paper,0.982,paper,0.9818,paper,0.9567
+images (8).jpg,paper,paper,0.9895,paper,0.9813,paper,0.9812,paper,0.9679,paper,0.8802
+images (9).jpg,paper,paper,0.8399,paper,0.7611,paper,0.8424,paper,0.6573,cardboard,0.5066
+images.jpg,paper,paper,0.9903,paper,0.9831,paper,0.9753,paper,0.9773,paper,0.9931
+1789393039233_285425636973233444_5944122805105729455_8627e57488d3d10ea031fa30870cdab8.jpg,plastic,plastic,0.6879,glass,0.4559,plastic,0.4844,plastic,0.4961,plastic,0.8551
+1789393039259_285425636973233444_5944122805105729455_bbe96c43ab172fea68b68c1de831604b.jpg,plastic,plastic,0.5871,trash,0.4845,trash,0.4222,plastic,0.5655,trash,0.5584
+1789393039281_285425636973233444_5944122805105729455_14bb1a097206362bf44434aaeddc7056.jpg,plastic,metal,0.6562,metal,0.5927,metal,0.6941,metal,0.6538,plastic,0.5578
+1789393039305_285425636973233444_5944122805105729455_2cc12b5220cc65f60d946e953b5ea1e1.jpg,plastic,plastic,0.7426,glass,0.7791,glass,0.8543,glass,0.7497,plastic,0.7916
+1789393039332_285425636973233444_5944122805105729455_5464ff35d56aa025962d575f18590103.jpg,plastic,plastic,0.7116,glass,0.4368,glass,0.6569,plastic,0.4046,plastic,0.5595
+1789393039360_285425636973233444_5944122805105729455_a20e8405ab5007eb730db989b75be53a.jpg,plastic,glass,0.8287,glass,0.9786,glass,0.9396,glass,0.9365,plastic,0.8793
+1789393039382_285425636973233444_5944122805105729455_ae2ed7149c85e482b4a4db571341dcae.jpg,plastic,plastic,0.4983,glass,0.5205,glass,0.6754,glass,0.6091,trash,0.591
+20260911_102136.jpg,plastic,paper,0.4707,cardboard,0.5481,cardboard,0.3843,cardboard,0.4047,cardboard,0.3869
+20260911_102139.jpg,plastic,paper,0.4531,plastic,0.2447,plastic,0.685,metal,0.3798,plastic,0.7129
+20260911_102338.jpg,plastic,plastic,0.5938,glass,0.5121,plastic,0.9225,glass,0.4535,plastic,0.9396
+20260911_102342.jpg,plastic,plastic,0.4505,glass,0.3061,plastic,0.7755,glass,0.316,plastic,0.9329
+20260911_111236.jpg,plastic,plastic,0.7823,plastic,0.4645,plastic,0.8523,plastic,0.6842,plastic,0.6889
+20260911_111251.jpg,plastic,plastic,0.4683,trash,0.432,plastic,0.8096,glass,0.4843,plastic,0.7691
+20260911_193753.jpg,plastic,plastic,0.7381,plastic,0.5938,plastic,0.9751,plastic,0.7639,plastic,0.6946
+20260911_194128.jpg,plastic,metal,0.7606,metal,0.5597,metal,0.529,metal,0.6268,trash,0.5284
+20260911_194137.jpg,plastic,metal,0.7264,metal,0.5094,metal,0.558,metal,0.7902,plastic,0.5183
+20260911_194140.jpg,plastic,metal,0.5437,glass,0.5848,metal,0.3764,metal,0.4647,plastic,0.3234
+20260911_194218.jpg,plastic,metal,0.8631,metal,0.7821,metal,0.5438,metal,0.8076,trash,0.3994
+20260911_194225.jpg,plastic,metal,0.6021,glass,0.4238,metal,0.4034,metal,0.419,trash,0.6299
+20260911_194234.jpg,plastic,metal,0.6657,metal,0.6939,metal,0.5332,metal,0.6946,plastic,0.6214
+20260911_194239.jpg,plastic,metal,0.7353,metal,0.5859,metal,0.5465,metal,0.7952,metal,0.3645
+20260911_194242.jpg,plastic,metal,0.3815,trash,0.3663,metal,0.4946,metal,0.5578,plastic,0.4599
+20260911_194245.jpg,plastic,cardboard,0.5183,cardboard,0.3746,plastic,0.4153,metal,0.6214,cardboard,0.5415
+20260911_194254.jpg,plastic,plastic,0.4706,trash,0.4413,plastic,0.5881,plastic,0.457,trash,0.6305
+20260911_194257.jpg,plastic,plastic,0.6521,plastic,0.3563,plastic,0.8559,plastic,0.611,plastic,0.9561
+20260911_194300.jpg,plastic,plastic,0.4693,glass,0.4797,glass,0.424,glass,0.4926,plastic,0.9077
+20260911_194313.jpg,plastic,metal,0.6533,trash,0.6627,plastic,0.3772,metal,0.4072,plastic,0.5184
+20260911_194318.jpg,plastic,metal,0.6207,trash,0.5788,plastic,0.3402,metal,0.3332,plastic,0.8511
+20260912_125956.jpg,plastic,metal,0.4698,glass,0.4513,plastic,0.3848,glass,0.438,glass,0.3765
+20260912_130001.jpg,plastic,metal,0.237,glass,0.4114,glass,0.443,glass,0.5158,plastic,0.3609
+1789392492874_285425636973233444_5944122805105729455_c3dba5489d526bb8fe562d37a6bb7196.jpg,trash,plastic,0.5222,paper,0.399,trash,0.5389,trash,0.2868,trash,0.8594
+1789392492897_285425636973233444_5944122805105729455_c2c0e89f8303c51a186c863a290c047a.jpg,trash,plastic,0.3638,trash,0.8449,metal,0.4593,metal,0.5991,trash,0.9123
+1789392492922_285425636973233444_5944122805105729455_310bf1bf99cd8f6478929a7a8f237fa8.jpg,trash,plastic,0.7749,glass,0.5734,glass,0.504,glass,0.5356,plastic,0.6502
+1789392492945_285425636973233444_5944122805105729455_7f67b588032d1497be043ff6b3b2e993.jpg,trash,trash,0.6012,trash,0.8874,trash,0.4545,trash,0.4971,metal,0.8631
+1789392492967_285425636973233444_5944122805105729455_2f4ed85584bf2846114dbd5c59144242.jpg,trash,plastic,0.4492,plastic,0.2648,metal,0.5391,plastic,0.3625,trash,0.6044
+1789392492989_285425636973233444_5944122805105729455_84ebd5fe47e1285fe188fc1522dcdaba.jpg,trash,trash,0.8353,trash,0.9398,trash,0.967,trash,0.8124,trash,0.9903
+1789392493014_285425636973233444_5944122805105729455_e38d77ca98121376ccad82eb2bb53b95.jpg,trash,plastic,0.6283,trash,0.3414,metal,0.3473,plastic,0.4315,trash,0.892
+1789392493037_285425636973233444_5944122805105729455_6394096982a892eb043bbc8e6c1d5f6a.jpg,trash,cardboard,0.7161,cardboard,0.8202,cardboard,0.6855,cardboard,0.6199,cardboard,0.6082
+1789392493062_285425636973233444_5944122805105729455_a57ef3ed4328db91634f883b303631b7.jpg,trash,trash,0.47,trash,0.5206,trash,0.7355,trash,0.4187,trash,0.9615
+1789392493089_285425636973233444_5944122805105729455_6c3971b657b926968a0aa66e448fac04.jpg,trash,plastic,0.5727,trash,0.3628,trash,0.6862,trash,0.3601,trash,0.953
+1789392493113_285425636973233444_5944122805105729455_bad4d34f012cf89b6e886052ce937679.jpg,trash,trash,0.8321,paper,0.3388,trash,0.4951,trash,0.4946,trash,0.9922
+1789392493136_285425636973233444_5944122805105729455_82ebb8393779fb71a478efbf2f0a07c7.jpg,trash,trash,0.4239,trash,0.3694,trash,0.3394,trash,0.2912,trash,0.5543
+1789392493164_285425636973233444_5944122805105729455_7fc3940c49c3d68b87626c529f21c991.jpg,trash,plastic,0.4415,trash,0.3495,plastic,0.3109,plastic,0.3993,trash,0.4714
+1789392493186_285425636973233444_5944122805105729455_4e64b7993dd97cdd2d6942474ba48fe5.jpg,trash,trash,0.4618,trash,0.7065,trash,0.6934,trash,0.5406,plastic,0.8835
+1789392493209_285425636973233444_5944122805105729455_852133de602dfdf1502122588b7c07d0.jpg,trash,plastic,0.4519,trash,0.2068,trash,0.4704,trash,0.3128,trash,0.9464
+1789392493231_285425636973233444_5944122805105729455_9bec4fe5561354037679c7394fb8412f.jpg,trash,trash,0.5561,trash,0.8177,trash,0.8006,trash,0.5636,trash,0.8687
+1789392493253_285425636973233444_5944122805105729455_039b60161ec921364a367350d55f5ba3.jpg,trash,plastic,0.8852,glass,0.7833,glass,0.8364,glass,0.7306,plastic,0.7162
+1789392493275_285425636973233444_5944122805105729455_1fc86f3cd63b32149e869041e366cdfe.jpg,trash,trash,0.6784,trash,0.697,trash,0.7707,trash,0.6354,trash,0.9818
+1789392493302_285425636973233444_5944122805105729455_3e3b9727ae26585ce3352884bfb69f07.jpg,trash,trash,0.7268,trash,0.9006,trash,0.8994,trash,0.6573,trash,0.9885
+1789392493324_285425636973233444_5944122805105729455_10f28b19db9731b0a24f75309ca853fa.jpg,trash,plastic,0.4843,paper,0.2633,plastic,0.3557,plastic,0.3258,plastic,0.5048
+1789392493347_285425636973233444_5944122805105729455_f60f27f7226e9a19a5691337d807d4f6.jpg,trash,trash,0.6361,trash,0.4166,trash,0.6556,trash,0.4975,trash,0.7853
+1789392493369_285425636973233444_5944122805105729455_78acc3724f3931f391fe61d014896235.jpg,trash,plastic,0.3755,paper,0.2835,glass,0.2767,paper,0.2923,trash,0.8581
+1789392493391_285425636973233444_5944122805105729455_a6819157f39cefec76830d0fb70e8c11.jpg,trash,plastic,0.8221,trash,0.4739,glass,0.4171,plastic,0.7169,trash,0.9498
+1789392493413_285425636973233444_5944122805105729455_0289adde37cba90b89e22bfe6f08f598.jpg,trash,glass,0.5627,glass,0.7841,glass,0.7173,glass,0.6783,plastic,0.5854
+1789392493436_285425636973233444_5944122805105729455_959183eac705976110dc1d07584fd1d7.jpg,trash,trash,0.5967,trash,0.6942,trash,0.6891,trash,0.547,trash,0.965
+1789392493458_285425636973233444_5944122805105729455_db069f1b348b6c676427f2018ce3fbc9.jpg,trash,trash,0.7528,trash,0.7567,trash,0.9636,trash,0.7161,trash,0.9882
+1789392493480_285425636973233444_5944122805105729455_fbe4ced385a228041f9b81f8391dbfe6.jpg,trash,paper,0.4218,paper,0.4711,trash,0.674,paper,0.4844,trash,0.7615
+1789392493502_285425636973233444_5944122805105729455_3e3cc5a579c230765f2dcb00258ce3e3.jpg,trash,trash,0.5777,trash,0.508,trash,0.5237,trash,0.425,trash,0.6006
+1789392493525_285425636973233444_5944122805105729455_b80ab3c16a3ea8ffbef021cc49519de9.jpg,trash,paper,0.6886,paper,0.7656,paper,0.9078,paper,0.6087,trash,0.6514
+1789392493546_285425636973233444_5944122805105729455_e86c02e19ca3cd8a0d8e83c5e9acec39.jpg,trash,plastic,0.7861,trash,0.3717,glass,0.6028,plastic,0.5202,trash,0.957

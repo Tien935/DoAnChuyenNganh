@@ -1,0 +1,6 @@
+﻿strategy,accuracy_pct,avg_confidence,std_confidence,num_samples,consistency_with_baseline_pct,flips_from_baseline
+P1_Single_Short,56.02,0.6798,0.2076,166,74.7,42
+P2_Template_Standard,63.86,0.6744,0.2257,166,82.53,29
+P3_Descriptive_3,63.25,0.7264,0.2149,166,75.3,41
+P4_Ensemble_5,63.25,0.6695,0.217,166,100.0,0
+P5_Contextual_Distracted,67.47,0.76,0.1955,166,57.83,70
