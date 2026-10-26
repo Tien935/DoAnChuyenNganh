@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Ứng dụng thị giác máy tính hỗ trợ phát hiện và phân loại rác thải." />
+    <title>Ứng dụng phát hiện &amp; phân loại rác thải</title>
+    <link rel="stylesheet" href="styles.css" /><link rel="stylesheet" href="studio.css?v=2" />
+  </head>
+  <body>
+    <main class="app-shell" aria-label="Ứng dụng phát hiện và phân loại rác thải">
+      <header class="app-header">
+        <a class="brand" href="#home" aria-label="Trang chủ ứng dụng">
+          <span class="brand-mark" aria-hidden="true">♻</span>
+          <span class="brand-copy">
+            <strong>EcoVision<span class="brand-badge">STUDIO</span></strong>
+            <span>Phát hiện và phân loại rác thải</span>
+          </span>
+        </a>
+        <div class="header-context">
+          <span class="status-indicator" aria-hidden="true"></span>
+          <span>Chế độ thử nghiệm</span>
+          <span class="user-avatar" aria-label="Người dùng">ND</span>
+        </div>
+      </header>
+
+      <div class="app-body">
+        <aside class="sidebar" aria-label="Điều hướng chính">
+          <p class="sidebar-label">KHÔNG GIAN LÀM VIỆC</p>
+          <nav class="primary-nav" aria-label="Các chức năng">
+            <a class="nav-link is-active" href="#home" aria-current="page"><span class="nav-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="m3 10 9-7 9 7v10H3Z"/><path d="M9 20v-7h6v7"/></svg></span><span>Trang chủ</span></a>
+            <a class="nav-link" href="#recognition"><span class="nav-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="4"/><circle cx="9" cy="9" r="2"/><path d="m3 17 6-5 5 4 4-5 3 3"/></svg></span><span>Nhận diện</span></a>
+            <a class="nav-link" href="#video"><span class="nav-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="14" height="14" rx="3"/><path d="m17 10 4-3v10l-4-3"/></svg></span><span>Video</span></a>
+            <a class="nav-link" href="#history"><span class="nav-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11a9 9 0 1 1 2 7M3 4v7h7"/><path d="M12 7v5l3 2"/></svg></span><span>Lịch sử</span></a>
+            <a class="nav-link" href="#workspace"><span class="nav-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7h16M4 17h16"/><circle cx="9" cy="7" r="3" fill="white"/><circle cx="15" cy="17" r="3" fill="white"/></svg></span><span>Cài đặt</span></a>
+          </nav>
+          <div class="sidebar-bottom">
+            <a class="nav-link" href="#help"><span class="nav-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M9 9a3 3 0 0 1 6 0c0 2-3 2-3 5m0 2v1"/></svg></span><span>Trợ giúp</span></a>
+            <div class="sidebar-note"><span class="sidebar-note-icon" aria-hidden="true">✦</span><span>Vì một môi trường xanh hơn</span></div>
+          </div>
+        </aside>
+
+<section class="home-view" id="home" aria-labelledby="home-title" hidden>
+  <span class="home-kicker">ECOVISION · ĐỒ ÁN THỊ GIÁC MÁY TÍNH</span>
+  <h1 id="home-title">Nhìn rõ hơn.<br><span>Phân loại tốt hơn.</span></h1>
+  <p class="home-description">Ứng dụng thị giác máy tính trong phát hiện và phân loại rác thải. Khám phá cách hình ảnh, video và camera có thể hỗ trợ nhận biết vật thể, theo dõi và thống kê rác thải.</p>
+  <div class="home-actions"><a href="#recognition" class="toolbar-button button-run">Bắt đầu với hình ảnh ↗</a><a href="#video" class="toolbar-button">Phân tích video →</a></div>
+  <div class="home-features"><article><span>01 / HÌNH ẢNH</span><h2>Nhận biết từng vật thể</h2><p>Tải ảnh, xem khung nhận diện, nhãn và điểm tin cậy. Lưu ảnh kết quả để đối chiếu.</p></article><article><span>02 / VIDEO</span><h2>Theo dõi qua khung hình</h2><p>Chạy, tạm dừng và tiếp tục video. Xem ID vật thể, tiến độ và xuất video có chú thích.</p></article><article><span>03 / WEBCAM</span><h2>Quan sát trực tiếp</h2><p>Kết nối camera trên thiết bị để xem hình ảnh trực tiếp và thử nghiệm giao diện nhận diện.</p></article></div>
+  <div class="project-status"><div><h2>Từ ý tưởng đến hệ thống nhận diện</h2><p>Pipeline dự kiến: OpenCV → YOLO → ByteTrack → OpenCLIP → hiển thị và xuất kết quả.</p></div><span class="mode-badge">Bản thử nghiệm giao diện</span><p>Hiện tại, bbox, nhãn và ID sử dụng dữ liệu giả lập. Các mô hình AI chưa được kết nối; kết quả không dùng để đánh giá độ chính xác nhận diện.</p></div>
+</section>        <section class="workspace" id="workspace" aria-labelledby="workspace-title">
+          <div class="workspace-intro"><div><p class="eyebrow">STUDIO</p><h1 id="workspace-title">Nhận diện rác thải</h1><p>Tải lên ảnh, video hoặc kết nối camera để bắt đầu.</p></div><span class="mode-badge">● &nbsp; Dữ liệu giả lập</span></div><div class="source-tabs" role="group" aria-label="Nguồn đầu vào"><button type="button" class="selected" data-source="all">Ảnh &amp; Video</button><button type="button" data-source="camera">Webcam trực tiếp</button><span>Tệp được xử lý trên thiết bị của bạn</span></div><div class="control-toolbar" role="toolbar" aria-label="Điều khiển xử lý video">
+            <div class="toolbar-caption">
+              <span class="toolbar-caption-mark" aria-hidden="true">▶</span>
+              <span>Điều khiển</span>
+            </div>
+            <div class="toolbar-actions">
+              <button class="toolbar-button button-file" id="choose-file" type="button">
+                <span class="button-icon" aria-hidden="true">＋</span>Chọn tệp
+              </button>
+              <button class="toolbar-button button-webcam" id="start-webcam" type="button">
+                <span class="button-icon" aria-hidden="true">◉</span>Webcam
+              </button>
+              <button class="toolbar-button button-run" id="run-video" type="button" disabled>
+                <span class="button-icon" aria-hidden="true">▶</span>Chạy
+              </button>
+              <button class="toolbar-button button-stop" id="stop-video" type="button" disabled>
+                <span class="button-icon" aria-hidden="true">■</span>Dừng
+              </button>
+              <button class="toolbar-button button-export" id="export-video" type="button" disabled>
+                <span class="button-icon" aria-hidden="true">⇩</span>Xuất video
+              </button>
+            </div>
+            <span class="app-state-label" id="app-state-label" aria-live="polite">Sẵn sàng</span>
+            <div class="processing-progress" aria-label="Tiến độ xử lý">
+              <span class="progress-label">Tiến độ</span>
+              <progress id="processing-progress" max="100" value="0">0%</progress>
+              <span id="progress-value">0%</span>
+            </div>
+            <input class="file-input" id="image-file-input" type="file" accept="image/*,video/mp4,video/x-msvideo,video/webm,.png,.jpg,.jpeg,.mp4,.avi,.webm" />
+          </div>
+
+          <div class="media-workspace">
+            <section class="preview-panel" id="recognition" aria-labelledby="preview-title">
+              <div class="panel-heading preview-heading">
+                <div>
+                  <p class="eyebrow">KHU VỰC VIDEO / WEBCAM</p>
+                  <h1 id="preview-title">Xem trước</h1>
+                </div>
+                <span class="media-status"><span aria-hidden="true"></span>Sẵn sàng</span>
+              </div>
+              <p class="file-feedback" id="file-feedback" role="alert" aria-live="assertive" hidden></p>
+              <div class="preview-frame" id="video" aria-label="Khung xem trước hình ảnh hoặc video">
+                <canvas class="media-layer" aria-label="Canvas hiển thị kết quả nhận diện" hidden></canvas>
+                <img class="media-layer" id="preview-image" alt="Ảnh xem trước" hidden />
+                <video class="media-layer" id="preview-video" controls playsinline preload="metadata" aria-hidden="true" hidden></video>
+                <div class="preview-empty" id="preview-empty">
+                  <span class="empty-media-icon" aria-hidden="true"><svg width="48" height="48" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="7" y="9" width="34" height="30" rx="6"/><circle cx="17" cy="19" r="3"/><path d="m8 33 10-10 9 9 6-6 8 8"/></svg></span>
+                  <strong>Thêm tệp để bắt đầu</strong>
+                  <span>Kéo thả ảnh hoặc video vào đây, hoặc nhấn Chọn tệp.</span>
+                </div>
+              </div>
+              <div class="preview-footer">
+                <span><span class="footer-dot" aria-hidden="true"></span>Khung xem trước</span>
+                <span>PNG, JPG, MP4, WEBM, AVI</span>
+              </div>
+            </section>
+
+            <aside class="result-panel" aria-labelledby="result-title">
+              <div class="panel-heading result-heading">
+                <div>
+                  <p class="eyebrow">PHÂN TÍCH AI</p>
+                  <h2 id="result-title">Kết quả giả lập</h2>
+                </div>
+                <span class="result-mark" aria-hidden="true">✦</span>
+              </div>
+              <div class="result-summary"><div><strong id="object-count">0</strong><span>Vật thể trong khung</span></div><div><strong id="render-fps">—</strong><span>FPS hiển thị</span></div></div><p class="result-intro">Độ tin cậy theo loại rác</p>
+              <div class="result-list" id="results-list">
+                <article class="result-item">
+                  <div class="result-item-heading"><span class="category-name"><span class="category-dot plastic"></span>Nhựa</span><strong>92%</strong></div>
+                  <div class="confidence-track" role="progressbar" aria-label="Độ tin cậy Nhựa" aria-valuemin="0" aria-valuemax="100" aria-valuenow="92"><span class="confidence-fill plastic-fill" style="width: 92%"></span></div>
+                </article>
+                <article class="result-item">
+                  <div class="result-item-heading"><span class="category-name"><span class="category-dot paper"></span>Giấy</span><strong>76%</strong></div>
+                  <div class="confidence-track" role="progressbar" aria-label="Độ tin cậy Giấy" aria-valuemin="0" aria-valuemax="100" aria-valuenow="76"><span class="confidence-fill paper-fill" style="width: 76%"></span></div>
+                </article>
+                <article class="result-item">
+                  <div class="result-item-heading"><span class="category-name"><span class="category-dot metal"></span>Kim loại</span><strong>64%</strong></div>
+                  <div class="confidence-track" role="progressbar" aria-label="Độ tin cậy Kim loại" aria-valuemin="0" aria-valuemax="100" aria-valuenow="64"><span class="confidence-fill metal-fill" style="width: 64%"></span></div>
+                </article>
+                <article class="result-item">
+                  <div class="result-item-heading"><span class="category-name"><span class="category-dot organic"></span>Hữu cơ</span><strong>38%</strong></div>
+                  <div class="confidence-track" role="progressbar" aria-label="Độ tin cậy Hữu cơ" aria-valuemin="0" aria-valuemax="100" aria-valuenow="38"><span class="confidence-fill organic-fill" style="width: 38%"></span></div>
+                </article>
+              </div>
+              <button type="button" class="toolbar-button" id="save-image" disabled>↓ &nbsp; Lưu ảnh kết quả</button><div class="result-note"><span aria-hidden="true">ⓘ</span><span id="results-note">Dữ liệu minh họa, chưa phải kết quả phân tích thực tế.</span></div>
+            </aside>
+          </div><div class="studio-guide" aria-label="Các bước sử dụng"><article class="guide-step"><span class="guide-number">01</span><div><h3>Thêm phương tiện</h3><p>Chọn ảnh, video hoặc dùng webcam trực tiếp.</p></div></article><article class="guide-step"><span class="guide-number">02</span><div><h3>Xem kết quả nhận diện</h3><p>Theo dõi nhãn, độ tin cậy và ID của vật thể.</p></div></article><article class="guide-step"><span class="guide-number">03</span><div><h3>Lưu kết quả</h3><p>Tải ảnh hoặc video kết quả về thiết bị.</p></div></article></div>
+        </section>
+      </div>
+      <footer class="info-bar" aria-label="Thông tin tệp video" aria-live="polite">
+        <div class="info-bar-title"><span class="info-bar-icon" aria-hidden="true">▤</span><span>THÔNG TIN TỆP</span></div>
+        <div class="info-field info-filename"><span class="info-label">Tên tệp</span><strong id="info-filename">Chưa có tệp</strong></div>
+        <div class="info-field"><span class="info-label">Độ phân giải</span><strong id="info-resolution">—</strong></div>
+        <div class="info-field"><span class="info-label">Thời lượng</span><strong id="info-duration">—</strong></div>
+        <div class="info-field"><span class="info-label">Định dạng</span><strong id="info-format">—</strong></div>
+      </footer>
+    </main>
+    <dialog id="utility-dialog"><div class="dialog-head"><h2 id="dialog-title"></h2><button id="close-dialog" type="button" aria-label="Đóng">×</button></div><div id="dialog-body"></div></dialog><script src="app.js" defer></script><script src="interface.js" defer></script>
+  </body>
+</html>
+
+
+
+
+
+
+
+
