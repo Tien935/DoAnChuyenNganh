@@ -1,0 +1,13 @@
+train: train/images
+val: valid/images
+test: test/images
+
+nc: 16
+names: ['Battery', 'BiologicalWaste', 'Cardboard Paper', 'Glass', 'Glass-Bottle', 'Glove', 'HDPE Plastic', 'Mask', 'Medicine', 'Newspaper', 'PET Bottle', 'Paper', 'Single-Use-Plastic', 'Single-layer Plastic', 'Squeeze Tube', 'syringe']
+
+roboflow:
+  workspace: mmt-kcsv2
+  project: waste-detection-cbffo
+  version: 3
+  license: CC BY 4.0
+  url: https://universe.roboflow.com/mmt-kcsv2/waste-detection-cbffo/dataset/3

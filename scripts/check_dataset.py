@@ -4,7 +4,7 @@ from collections import defaultdict
 
 # Paths
 base_dir = r"d:\DoAnChuyenNganh"
-dataset_path = os.path.join(base_dir, "yolov12_dataset")
+dataset_path = os.path.join(base_dir, "dataset")
 yaml_path = os.path.join(dataset_path, "data.yaml")
 
 # Load yaml
