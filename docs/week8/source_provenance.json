@@ -1,0 +1,9 @@
+{
+  "HEAD": "c08d2246a5f957add1e4152e756ee1b5f4eee6f7",
+  "origin/frontend": "c08d2246a5f957add1e4152e756ee1b5f4eee6f7",
+  "origin/Tu": "27789a589159238c9e66bddf3736b85b49d2a0a1",
+  "yolov12": "64d5ffc6db35a1bde446689ab8450ecd43475e00",
+  "local_branch": "frontend",
+  "uncommitted_integration": true,
+  "source_backend_base": "7b2df37c90f961c5f3b7bdf8ed3d6d7c85120b02"
+}

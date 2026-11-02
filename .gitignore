@@ -1,0 +1,13 @@
+venv/
+runs/
+yolov12_dataset/
+yolov12/
+__pycache__/
+*.pyc
+*.pt
+*.pth
+models/
+local_runs/
+.pytest_cache/
+.setup/
+dataset/

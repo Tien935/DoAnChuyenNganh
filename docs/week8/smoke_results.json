@@ -1,0 +1,36 @@
+{
+  "fixture_note": "Video kỹ thuật 24 khung được tạo từ một ảnh test, không phải video thực địa và không đánh giá chất lượng tracking/đếm.",
+  "results": [
+    {
+      "case": "real_image_cpu",
+      "status": "PASS",
+      "job_id": "a3c65c10b4cd489d"
+    },
+    {
+      "case": "video_yolo_bytetrack_pause_resume_export",
+      "status": "PASS",
+      "job_id": "aa1ac8e4ba814ac0",
+      "decoded_output_frames": 24
+    },
+    {
+      "case": "image_after_tracked_video_has_no_stale_tracker",
+      "status": "PASS",
+      "job_id": "acf6f965d1574da5"
+    },
+    {
+      "case": "corrupt_image_real_worker",
+      "status": "PASS",
+      "job_id": "7f18fb2cecd74ae1"
+    },
+    {
+      "case": "cancel_real_worker",
+      "status": "PASS",
+      "job_id": "a1cb380a92b04569"
+    },
+    {
+      "case": "real_image_cuda",
+      "status": "PASS",
+      "job_id": "258bb836b2ea4204"
+    }
+  ]
+}

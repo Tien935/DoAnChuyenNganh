@@ -1,0 +1,6 @@
+# Class order from origin/Tu:dataset/data.yaml. Paths relative to this file.
+train: ../dataset/train/images
+val: ../dataset/valid/images
+test: ../dataset/test/images
+nc: 16
+names: ['Battery', 'BiologicalWaste', 'Cardboard Paper', 'Glass', 'Glass-Bottle', 'Glove', 'HDPE Plastic', 'Mask', 'Medicine', 'Newspaper', 'PET Bottle', 'Paper', 'Single-Use-Plastic', 'Single-layer Plastic', 'Squeeze Tube', 'syringe']

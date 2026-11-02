@@ -1,0 +1,17 @@
+id,case,expected,status,evidence
+API-01,API validation and job lifecycle plus Windows preview lock,19 automated checks pass,PASS,local_runs/pytest_results.xml
+E2E-01,Real image inference on CPU,Annotated PNG and metadata saved,PASS,docs/week8/smoke_results.json
+E2E-02,Video YOLO plus ByteTrack with pause resume,24 input frames exported and decoded as 24 output frames,PASS,docs/week8/smoke_results.json
+E2E-03,Image after tracked video,No stale tracker IDs on plain prediction,PASS,docs/week8/smoke_results.json
+E2E-04,Corrupt image in real worker,Failed job with readable error and queue released,PASS,docs/week8/smoke_results.json
+E2E-05,Cancel running or queued task,Cancelled without completed output,PASS,docs/week8/smoke_results.json
+E2E-06,Real image inference on CUDA,Annotated image on GPU,PASS,docs/week8/smoke_results.json
+UI-01,Sample image from browser,Real result and timing visible,PASS,Browser QA 2026-11-02
+UI-02,Video from browser,Preview then annotated MP4 playback,PASS,docs/week8/frontend_video_test.jpg; run 386a0fcc98a14881
+UI-03,Image download from browser,PNG opens outside browser,Chua chay,
+UI-04,Camera permission allowed and denied,Useful webcam/error states,Chua chay,
+UI-05,Change files and navigate repeatedly,No stale image or result,Chua chay,
+UI-06,Video download from browser,Downloaded MP4 decodes all 24 frames,PASS,ecovision_386a0fcc98a14881.mp4 in Downloads
+ACC-01,Trained 16-class checkpoint evaluation,Box and mask metrics plus confusion matrix,Cho best.pt cua nhom,
+PERF-01,Three repeated real-field videos per configuration,Mean and spread under fixed conditions,Cho video test da khoa,
+VLM-01,Full YOLO ByteTrack OpenCLIP system,Accurate latency and VLM call counts,Chua tich hop VLM,

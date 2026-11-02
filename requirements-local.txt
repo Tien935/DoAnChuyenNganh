@@ -1,0 +1,22 @@
+# Install the existing CUDA PyTorch separately; do not replace it with a CPU wheel.
+numpy==1.26.4
+opencv-python==4.10.0.84
+pandas==2.2.3
+matplotlib==3.9.4
+scipy==1.14.1
+requests
+tqdm
+psutil
+py-cpuinfo
+seaborn==0.13.2
+ultralytics-thop
+huggingface_hub
+timm
+einops
+lap>=0.5.12
+fastapi
+uvicorn
+python-multipart
+imageio-ffmpeg
+pytest
+httpx
