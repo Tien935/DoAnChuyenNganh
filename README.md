@@ -1,114 +1,126 @@
-# NHẬN DẠNG VÀ PHÂN LOẠI RÁC THẢI VỚI YOLOv12 INSTANCE SEGMENTATION
+﻿# Nhận diện và phân loại rác bằng YOLOv12
 
-## 1. Mục tiêu Dự án
-Dự án nhằm mục đích xây dựng một hệ thống học sâu (Deep Learning) sử dụng kiến trúc YOLOv12 mới nhất để không chỉ **nhận diện (Detection)** mà còn **phân vùng điểm ảnh (Instance Segmentation)** chính xác 16 loại rác thải khác nhau. 
+Ứng dụng hỗ trợ nhận diện rác và phân vùng từng vật thể (instance segmentation) bằng YOLOv12. Giao diện web được xây dựng bằng Gradio, kết hợp FastAPI cho một số chức năng backend. Kết quả gồm lớp dự đoán, vùng mask và hướng dẫn phân loại rác; dự án cũng có các script để kiểm tra dữ liệu, huấn luyện và đánh giá mô hình.
 
-Dự án này là phiên bản nâng cấp và tối ưu hóa từ bài báo gốc *"Real-Time Waste Detection and Classification Using YOLOv12-Based Deep Learning Model"*.
+## Tính năng
 
-## 2. Thông tin Dataset
-- **Tổng số ảnh:** 7.288 ảnh.
-- **Phân chia (Split):** 70% Train (5.121 ảnh), 15% Validation (1.082 ảnh), 15% Test (1.085 ảnh).
-- **Số lớp (Classes):** 16 lớp (Battery, Glass-Bottle, Glove, Mask, Medicine, Newspaper, PET Bottle, Paper, Single-Use-Plastic, Single-layer Plastic, Squeeze Tube, syringe, v.v.).
-- **Định dạng nhãn:** Toàn bộ được chuẩn hóa về dạng Polygon (Đa giác) để phục vụ huấn luyện Segmentation.
+- Phân vùng vật thể rác trong ảnh bằng YOLOv12 segmentation.
+- Giao diện Gradio hỗ trợ ảnh, video và webcam; ứng dụng khởi chạy backend webcam riêng.
+- Phân loại rác theo nhóm và hiển thị gợi ý xử lý.
+- Tùy chọn OpenCLIP hỗ trợ nhận diện zero-shot cho một số trường hợp được cấu hình trong ứng dụng.
+- Script kiểm tra/chuyển đổi nhãn, huấn luyện và đánh giá mô hình.
 
-## 3. Cấu trúc Project (Sau khi thiết lập)
+## Cấu trúc dự án
+
 ```text
-D:\DoAnChuyenNganh\
-├── yolov12_dataset/          # Dữ liệu ảnh và nhãn
-│   ├── train/
-│   ├── valid/
-│   ├── test/
-│   └── data.yaml             # File khai báo đường dẫn và classes
-├── yolov12/                  # Mã nguồn gốc YOLOv12 (từ Github)
-├── scripts/                  # Các đoạn code thực thi tự động
-│   ├── check_dataset.py      # Kiểm tra và rà soát lỗi nhãn
-│   ├── fix_mixed_labels.py   # Chuyển BBox thành Polygon
-│   ├── train_smoke.py        # Test nhanh 1 epoch
-│   ├── train.py              # Huấn luyện chính thức 100 epochs
-│   └── evaluate.py           # Chấm điểm mô hình trên tập Test
-├── runs/
-│   └── train_100_epochs/     # Nơi lưu file trọng số best.pt và biểu đồ
-├── sample_images/            # Thư mục ảnh mẫu thử nghiệm nhanh cho Web UI
-├── app.py                    # Giao diện người dùng Web App (Gradio)
-├── run_app.bat               # File nhấp đúp chạy nhanh Giao diện người dùng
-├── venv/                     # Môi trường ảo Python
-├── yolov12s-seg.pt           # File trọng số học trước (Pre-trained)
-├── project_changes_log.txt   # Nhật ký quyết định kỹ thuật
-├── so_sanh_thuc_nghiem_va_bai_bao.md # Báo cáo so sánh với bài báo
-└── README.md                 # Hướng dẫn này
+.
+├── app.py                         # Ứng dụng Gradio/FastAPI
+├── app_1.py                       # Bản ứng dụng phụ
+├── yolov12/                       # Mã nguồn YOLOv12
+├── yolov12s-seg.pt                # Trọng số khởi tạo segmentation
+├── runs/train_100_epochs/         # Kết quả huấn luyện (nếu có)
+├── yolov12_dataset/               # Dataset và data.yaml (nếu có)
+├── sample_images/                 # Ảnh mẫu
+├── scripts/
+│   ├── check_dataset.py           # Kiểm tra dataset
+│   ├── fix_mixed_labels.py        # Chuẩn hóa nhãn segmentation
+│   ├── train.py                   # Huấn luyện
+│   ├── train_smoke.py             # Chạy thử huấn luyện
+│   └── evaluate.py                # Đánh giá trên tập test
+└── YOLOv12_paper_evaluation_tools/ # Công cụ đánh giá/đối chiếu bổ sung
 ```
 
-## 4. Hướng dẫn Cài đặt Môi trường (Installation)
-*Mở Terminal (PowerShell) và chạy lần lượt các lệnh sau:*
+Một số thư mục dữ liệu, trọng số và kết quả chạy có thể không được đưa vào bản clone hoặc kho Git. Hãy kiểm tra chúng trước khi chạy các lệnh huấn luyện/đánh giá.
 
-**Bước 4.1: Tạo môi trường ảo và cập nhật pip**
+## Yêu cầu
+
+- Windows 10/11 và Python 3.10 hoặc phiên bản tương thích với mã nguồn YOLOv12 trong thư mục `yolov12`.
+- GPU NVIDIA và CUDA được khuyến nghị để huấn luyện, nhưng ứng dụng có thể chạy suy luận trên CPU (chậm hơn).
+- Git nếu cần tải mã nguồn YOLOv12.
+
+## Cài đặt
+
+Mở PowerShell tại thư mục dự án:
+
 ```powershell
 python -m venv venv
 .\venv\Scripts\python.exe -m pip install --upgrade pip
 ```
 
-**Bước 4.2: Cài đặt PyTorch hỗ trợ GPU (Card rời NVIDIA)**
+Cài PyTorch phù hợp với máy của bạn. Ví dụ dưới đây dùng CUDA 12.4; nếu không có GPU NVIDIA, hãy chọn lệnh cài đặt CPU từ trang chính thức của PyTorch.
+
 ```powershell
 .\venv\Scripts\python.exe -m pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu124
 ```
 
-**Bước 4.3: Cài đặt mã nguồn lõi YOLOv12 và thư viện phụ trợ**
-*(Vì thư viện ultralytics mặc định chưa ổn định với YOLOv12, ta phải cài từ mã nguồn github gốc)*
+Cài các thư viện ứng dụng và YOLOv12:
+
 ```powershell
-.\venv\Scripts\python.exe -m pip install opencv-python pandas matplotlib pyyaml gradio imageio imageio-ffmpeg
-cd yolov12
-..\venv\Scripts\python.exe -m pip install -e .
-cd ..
-.\venv\Scripts\python.exe -m pip install huggingface_hub "numpy<2.0.0"
+.\venv\Scripts\python.exe -m pip install opencv-python gradio imageio imageio-ffmpeg numpy pandas matplotlib pyyaml pillow fastapi uvicorn open-clip-torch "numpy<2"
+.\venv\Scripts\python.exe -m pip install huggingface_hub
+.\venv\Scripts\python.exe -m pip install -e .\yolov12
 ```
 
-**Bước 4.4: Tải trọng số Pre-trained**
+Nếu cài đặt hoặc chạy gặp lỗi tương thích, hãy đối chiếu phiên bản Python/PyTorch với yêu cầu của mã nguồn YOLOv12 đang dùng.
+
+## Trọng số mô hình
+
+Ứng dụng ưu tiên trọng số đã huấn luyện tại `runs/train_100_epochs/weights/best.pt`. Nếu file này không tồn tại, `app.py` dùng `yolov12s-seg.pt` ở thư mục gốc. Vì vậy, cần có ít nhất một trong hai file trọng số trước khi chạy ứng dụng.
+
+Nếu cần tải trọng số khởi tạo YOLOv12s segmentation:
+
 ```powershell
-Invoke-WebRequest -Uri "https://github.com/sunsmarterjie/yolov12/releases/download/seg/yolov12s-seg.pt" -OutFile "yolov12s-seg.pt"
+Invoke-WebRequest `
+  -Uri "https://github.com/sunsmarterjie/yolov12/releases/download/seg/yolov12s-seg.pt" `
+  -OutFile "yolov12s-seg.pt"
 ```
 
-## 5. Tiền xử lý dữ liệu (Data Pre-processing)
-Chạy script để chuyển đổi các nhãn cũ (Bounding Box 5 thông số) thành nhãn Segmentation (Polygon 9 thông số) để tránh lỗi huấn luyện:
+## Chạy ứng dụng
+
 ```powershell
-$env:PYTHONIOENCODING="utf-8"
+$env:PYTHONIOENCODING = "utf-8"
+.\venv\Scripts\python.exe app.py
+```
+
+Ứng dụng mở giao diện tại `http://127.0.0.1:7860`. Có thể đổi cổng bằng biến môi trường `PORT`:
+
+```powershell
+$env:PORT = "7861"
+.\venv\Scripts\python.exe app.py
+```
+
+## Kiểm tra dữ liệu và huấn luyện
+
+Các script giả định dataset nằm tại `yolov12_dataset/` và có file `data.yaml`. Một số đường dẫn trong script hiện được ghi cố định theo máy phát triển; nếu chạy ở vị trí khác, hãy cập nhật đường dẫn dữ liệu/trọng số trong script tương ứng.
+
+Kiểm tra dataset:
+
+```powershell
+.\venv\Scripts\python.exe scripts\check_dataset.py
+```
+
+Chuẩn hóa nhãn hỗn hợp sang định dạng segmentation (chỉ chạy khi dữ liệu cần chuyển đổi):
+
+```powershell
 .\venv\Scripts\python.exe scripts\fix_mixed_labels.py
 ```
 
-## 6. Huấn luyện Mô hình (Training)
-Mô hình được cấu hình để không bị treo máy trên Windows (`workers=0`) và tránh tràn RAM đồ họa 6GB (`batch=8`). Chạy lệnh sau để huấn luyện 100 chu kỳ:
+Huấn luyện cấu hình 100 epoch:
+
 ```powershell
-$env:PYTHONIOENCODING="utf-8"
 .\venv\Scripts\python.exe scripts\train.py
 ```
-*(Kết quả sẽ được lưu vào thư mục `runs/train_100_epochs/weights/best.pt`)*
 
-## 7. Đánh giá Mô hình (Evaluation)
-Để kiểm tra độ chính xác mAP, Precision, Recall trên tập TEST (1.085 ảnh chưa từng nhìn thấy):
+Đánh giá mô hình trên tập test:
+
 ```powershell
-$env:PYTHONIOENCODING="utf-8"
 .\venv\Scripts\python.exe scripts\evaluate.py
 ```
 
-## 8. Hướng dẫn Khởi chạy Giao diện Người dùng (Web UI Gradio)
-Hệ thống cung cấp giao diện Web trực quan (xây dựng bằng thư viện Gradio) tích hợp đầy đủ 3 chế độ: **Ảnh**, **Video** và **Webcam trực tiếp**, cùng quy chuẩn phân loại 4 nhóm rác (Tái chế, Nguy hại, Hữu cơ, Vô cơ).
+Kết quả huấn luyện dự kiến được lưu trong `runs/train_100_epochs/`. Đánh giá cần có dataset, file cấu hình và trọng số huấn luyện phù hợp.
 
-- **Cách 1 (Nhanh nhất):** Nhấp đúp chuột vào file `run_app.bat` trên Windows.
-- **Cách 2 (Qua dòng lệnh PowerShell):**
-```powershell
-$env:PYTHONIOENCODING="utf-8"
-.\venv\Scripts\python.exe app.py
-```
-*(Trình duyệt sẽ tự động mở giao diện tại `http://127.0.0.1:7860`).*
+## Ghi chú
 
-## 9. Kết quả Thực nghiệm (Segmentation Mask)
-- **Precision:** 83.5%
-- **Recall:** 76.9%
-- **F1-Score:** 0.801
-- **mAP@0.5:** 80.6%
-- **Tốc độ (Inference Time):** ~19.6ms / ảnh (~51 FPS trên RTX 4050).
-*(Đạt độ chính xác cao hơn bài báo gốc dù sử dụng số lượng phân lớp nhiều gấp đôi).*
-
-## 10. Khắc phục sự cố thường gặp (Troubleshooting)
-- **Lỗi `module 'numpy' has no attribute 'trapz'`:** Do dùng numpy bản 2.x. Cách sửa: `pip install "numpy<2.0.0"`.
-- **Lỗi treo cứng máy / tràn Pagefile khi đang train:** Do cơ chế đa luồng của Windows ép tải thư viện PyTorch nhiều lần. Cách sửa: Bắt buộc thêm tham số `workers=0` vào hàm `model.train()`.
-- **Lỗi `No such file or directory: 'yolov12s-seg.pt'`:** Thư viện không tự tải được file trọng số do YOLOv12 quá mới. Cách sửa: Chủ động download file `.pt` từ github thả vào thư mục gốc.
+- Không sử dụng ảnh webcam/video làm bằng chứng đo hiệu năng nếu chưa cố định quy trình và cấu hình đo.
+- Trọng số, dataset và thư mục `runs/` có thể chiếm nhiều dung lượng; không phải bản clone nào cũng bao gồm các tài nguyên này.
+- Hướng dẫn phân loại trong ứng dụng mang tính hỗ trợ. Hãy tuân thủ hướng dẫn thu gom rác tại địa phương, đặc biệt với pin, vật sắc nhọn và rác y tế.
