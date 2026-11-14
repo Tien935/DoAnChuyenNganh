@@ -1,0 +1,22 @@
+path: D:/DoAnChuyenNganh/yolov12_dataset
+train: D:/DoAnChuyenNganh/yolov12_dataset/train/images
+val: D:/DoAnChuyenNganh/yolov12_dataset/valid/images
+test: D:/DoAnChuyenNganh/YOLOv12_paper_evaluation_tools/sensitivity_results/run_20261108_160942_988685/filtered_test_images.txt
+nc: 16
+names:
+  0: Battery
+  1: BiologicalWaste
+  2: Cardboard Paper
+  3: Glass
+  4: Glass-Bottle
+  5: Glove
+  6: HDPE Plastic
+  7: Mask
+  8: Medicine
+  9: Newspaper
+  10: PET Bottle
+  11: Paper
+  12: Single-Use-Plastic
+  13: Single-layer Plastic
+  14: Squeeze Tube
+  15: syringe

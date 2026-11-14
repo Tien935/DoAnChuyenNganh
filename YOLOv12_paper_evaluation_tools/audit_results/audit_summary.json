@@ -1,0 +1,48 @@
+{
+  "data_yaml": "D:\\DoAnChuyenNganh\\yolov12_dataset\\data.yaml",
+  "number_of_classes": 16,
+  "class_names": {
+    "0": "Battery",
+    "1": "BiologicalWaste",
+    "2": "Cardboard Paper",
+    "3": "Glass",
+    "4": "Glass-Bottle",
+    "5": "Glove",
+    "6": "HDPE Plastic",
+    "7": "Mask",
+    "8": "Medicine",
+    "9": "Newspaper",
+    "10": "PET Bottle",
+    "11": "Paper",
+    "12": "Single-Use-Plastic",
+    "13": "Single-layer Plastic",
+    "14": "Squeeze Tube",
+    "15": "syringe"
+  },
+  "splits": {
+    "train": {
+      "images": 0,
+      "objects": 0,
+      "missing_labels": 0,
+      "empty_labels": 0,
+      "invalid_annotations": 0
+    },
+    "val": {
+      "images": 0,
+      "objects": 0,
+      "missing_labels": 0,
+      "empty_labels": 0,
+      "invalid_annotations": 0
+    },
+    "test": {
+      "images": 0,
+      "objects": 0,
+      "missing_labels": 0,
+      "empty_labels": 0,
+      "invalid_annotations": 0
+    }
+  },
+  "cross_split_exact_duplicate_groups": 0,
+  "error_count": 0,
+  "note": "This script is read-only. Near-duplicate image detection still requires a separate perceptual-hash review."
+}

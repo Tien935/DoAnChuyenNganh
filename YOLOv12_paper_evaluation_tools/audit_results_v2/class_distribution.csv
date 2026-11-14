@@ -1,0 +1,17 @@
+﻿class_id,class_name,train,val,test,total
+0,Battery,1419,438,434,2291
+1,BiologicalWaste,80,17,17,114
+2,Cardboard Paper,127,29,44,200
+3,Glass,109,28,21,158
+4,Glass-Bottle,188,39,52,279
+5,Glove,89,27,20,136
+6,HDPE Plastic,575,4,217,796
+7,Mask,156,42,31,229
+8,Medicine,144,38,30,212
+9,Newspaper,80,14,16,110
+10,PET Bottle,524,137,132,793
+11,Paper,1301,178,182,1661
+12,Single-Use-Plastic,3272,835,458,4565
+13,Single-layer Plastic,6938,1697,1216,9851
+14,Squeeze Tube,1203,240,212,1655
+15,syringe,159,39,50,248

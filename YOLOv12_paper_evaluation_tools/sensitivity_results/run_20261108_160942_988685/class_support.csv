@@ -1,0 +1,17 @@
+﻿class_id,class_name,original,retained,excluded
+0,Battery,434,279,155
+1,BiologicalWaste,17,17,0
+2,Cardboard Paper,44,44,0
+3,Glass,21,21,0
+4,Glass-Bottle,52,52,0
+5,Glove,20,20,0
+6,HDPE Plastic,217,212,5
+7,Mask,31,31,0
+8,Medicine,30,30,0
+9,Newspaper,16,16,0
+10,PET Bottle,132,132,0
+11,Paper,182,126,56
+12,Single-Use-Plastic,458,458,0
+13,Single-layer Plastic,1216,1214,2
+14,Squeeze Tube,212,212,0
+15,syringe,50,50,0

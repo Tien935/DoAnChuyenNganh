@@ -1,0 +1,45 @@
+{
+  "analysis_type": "post_hoc_test_subset_sensitivity_analysis_not_independent_test",
+  "root": "D:\\DoAnChuyenNganh\\yolov12_dataset",
+  "original_images": 1085,
+  "retained_images": 954,
+  "excluded_images": 131,
+  "original_objects": 3132,
+  "retained_objects": 2914,
+  "all_16_classes_present": true,
+  "policy": "direct reviewed cross-split pairs involving test; no deletion or retraining",
+  "exclude_unclear": false,
+  "review_counts": {
+    "gan_trung": 302,
+    "khac_anh": 29,
+    "chua_ro": 3
+  },
+  "unnamed_csv_column": "ignored; named review column is authoritative",
+  "candidate_csv_sha256": "a82e89409de1edadded6ef23faf8715483e43c1ab04b931e4a13e280c3ca0808",
+  "original_metrics_sha256": "ae1647f9a6e1ac1c9fb88a4364ab8db2f4e73c7c865d63cf8aaa5780fd3b5c9d",
+  "source_yaml_sha256": "65bd05036ea18075cfa5b888289e3673656c5d182d6c8996c5648e9f04583943",
+  "filtered_image_list_sha256": "04ecb3b14f3a4cbd9b6ba3942abcf0bce5c6d116cc92961aac5aea20695fbb98",
+  "fixed_operating_confidence": 0.3023023023023023,
+  "original_protocol": {
+    "model": "D:\\DoAnChuyenNganh\\runs\\train_100_epochs\\weights\\best.pt",
+    "data": "D:\\DoAnChuyenNganh\\yolov12_dataset\\data.yaml",
+    "validation_split": "val",
+    "test_split": "test",
+    "imgsz": 640,
+    "batch": 1,
+    "workers": 0,
+    "device": "0",
+    "nms_iou": 0.7,
+    "ap_confidence_floor": 0.001,
+    "operating_confidence": 0.3023023023023023,
+    "operating_confidence_method": "validation mask macro-F1 curve",
+    "tta": false
+  },
+  "limitations": [
+    "Only pairs found by the previous pHash screening and reviewed by the user are considered.",
+    "Remaining near-duplicates, same-scene dependence and train-val overlap may persist.",
+    "Changes in metrics are descriptive; sample size and class/scene composition also change.",
+    "Existing weights and original validation-selected threshold are not reselected.",
+    "Ultralytics may refresh its labels.cache; source images and label txt files are not edited."
+  ]
+}

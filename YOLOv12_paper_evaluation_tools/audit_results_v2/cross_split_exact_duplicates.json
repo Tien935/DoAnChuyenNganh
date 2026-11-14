@@ -1,0 +1,13 @@
+[
+  {
+    "sha256": "20841a1d78b0880494280dbda8e45f67007a824e667e46d2b6debb4cfdfcbe5e",
+    "splits": [
+      "train",
+      "val"
+    ],
+    "files": [
+      "D:\\DoAnChuyenNganh\\yolov12_dataset\\train\\images\\2023-11-04_16-34-59_jpg.rf.ea450af252b5e723f0e2643b3673dcdd.jpg",
+      "D:\\DoAnChuyenNganh\\yolov12_dataset\\valid\\images\\2023-11-04_16-34-59_jpg.rf.41a768cfad8d98c371733cbd6943f7fa.jpg"
+    ]
+  }
+]

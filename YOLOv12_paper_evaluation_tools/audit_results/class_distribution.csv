@@ -1,0 +1,17 @@
+﻿class_id,class_name,train,val,test,total
+0,Battery,0,0,0,0
+1,BiologicalWaste,0,0,0,0
+2,Cardboard Paper,0,0,0,0
+3,Glass,0,0,0,0
+4,Glass-Bottle,0,0,0,0
+5,Glove,0,0,0,0
+6,HDPE Plastic,0,0,0,0
+7,Mask,0,0,0,0
+8,Medicine,0,0,0,0
+9,Newspaper,0,0,0,0
+10,PET Bottle,0,0,0,0
+11,Paper,0,0,0,0
+12,Single-Use-Plastic,0,0,0,0
+13,Single-layer Plastic,0,0,0,0
+14,Squeeze Tube,0,0,0,0
+15,syringe,0,0,0,0

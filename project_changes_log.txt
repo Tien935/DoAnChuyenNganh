@@ -11,3 +11,21 @@ File này dùng để ghi lại những thay đổi về công nghệ, cấu hì
 - Tình trạng gốc: Dataset chứa lẫn lộn cả nhãn Polygon (chuẩn Segmentation) và nhãn Bounding Box (chuẩn Object Detection).
 - Thay đổi: Chạy script tự động chuyển đổi các nhãn Bounding Box (5 giá trị: class, xc, yc, w, h) thành Polygon hình chữ nhật (tạo từ 4 góc, gồm 9 giá trị).
 - Đánh giá ảnh hưởng: Giữ lại được 100% dữ liệu để huấn luyện Segmentation. Các vật thể được gán nhãn Bounding Box gốc khi dự đoán/training sẽ có mask (mặt nạ) hình chữ nhật thay vì ôm sát viền cong. Điều này có thể làm giảm nhẹ độ chính xác mAP của Segmentation Mask ở các class bị gán nhãn hỗn hợp, nhưng là bắt buộc để YOLO không báo lỗi.
+
+3. [Ngày 12/10/2026] - Tích hợp mô hình Thị giác - Ngôn ngữ OpenCLIP (Two-Stage Pipeline: YOLOv12 + OpenCLIP).
+- Tình trạng gốc: Hệ thống chỉ dùng thuần YOLOv12 để nhận diện đóng khung/phân vùng trực tiếp dựa trên 16 classes đã được huấn luyện cố định. Các vật thể ngoài tập dữ liệu (như lon kim loại/coca) hoặc biến dạng bị nhận diện nhầm.
+- Thay đổi: Xây dựng pipeline 2 giai đoạn:
+  + Giai đoạn 1: YOLOv12s-seg phát hiện vị trí và cắt (crop) các vùng ảnh rác thải.
+  + Giai đoạn 2: OpenCLIP (kiến trúc ViT-B/32) nhận vùng ảnh crop, so khớp độ tương đồng Cosine Similarity với tập mô tả văn bản (Text Prompts) của từng loại rác, hỗ trợ Zero-shot classification và xác minh nhãn cho các vật thể nằm ngoài 16 class ban đầu.
+- Đánh giá ảnh hưởng:
+  + Điểm tích cực: Khắc phục điểm yếu "mù" đối với các loại rác mới ngoài 16 class (ví dụ lon nhôm, kim loại), nâng cao độ chính xác nhận diện ngữ nghĩa rác thải.
+  + Đánh đổi (Trade-off): Tăng chi phí tính toán (thêm ~350MB trọng số CLIP và thêm thời gian trích xuất embedding cho từng vùng crop), làm giảm tốc độ suy luận (FPS) khi chạy thời gian thực trên webcam từ ~40-50 FPS xuống khoảng ~15-25 FPS.
+
+4. [Ngày 02/11/2026] - Phát triển Giao diện Người dùng Đa Phương thức (Gradio Web UI) và Phân loại Rác tại Nguồn.
+- Tình trạng gốc: Hệ thống chỉ chạy qua các script dòng lệnh (train.py, webcam.py, yolo_openclip_pipeline.py), khó thao tác và chưa trực quan cho việc demo, báo cáo đồ án.
+- Thay đổi: Xây dựng giao diện Web hoàn chỉnh trên nền Gradio (app.py, run_app.bat) tích hợp:
+  + Tab 1: Phân tích ảnh tĩnh với thanh trượt tham số (Conf, IoU, OpenCLIP threshold), hiển thị Mask đa giác màu bán trong suốt, bảng thống kê vật thể chi tiết và kho ảnh mẫu thử nghiệm nhanh.
+  + Tab 2: Phân tích video (MP4/AVI/MOV), tự động mã hóa chuẩn H.264 playback trực tiếp trên trình duyệt, thống kê tần suất xuất hiện của từng loại rác trong toàn bộ video.
+  + Tab 3: Webcam thời gian thực (hỗ trợ cả chế độ chụp nhanh trên trình duyệt và phím tắt mở cửa sổ native OpenCV 50+ FPS).
+  + Tab 4: Bảng tra cứu quy chuẩn 4 nhóm thùng rác (Tái chế, Nguy hại, Hữu cơ, Vô cơ) theo chuẩn Bộ Tài nguyên & Môi trường và bảng so sánh kết quả thực nghiệm với bài báo gốc.
+- Đánh giá ảnh hưởng: Nâng tầm dự án từ mã nguồn thực nghiệm thành một sản phẩm AI ứng dụng hoàn chỉnh, dễ dàng trình chiếu và thuyết phục Hội đồng chấm Đồ án chuyên ngành.

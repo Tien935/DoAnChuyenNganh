@@ -28,6 +28,9 @@ D:\DoAnChuyenNganh\
 │   └── evaluate.py           # Chấm điểm mô hình trên tập Test
 ├── runs/
 │   └── train_100_epochs/     # Nơi lưu file trọng số best.pt và biểu đồ
+├── sample_images/            # Thư mục ảnh mẫu thử nghiệm nhanh cho Web UI
+├── app.py                    # Giao diện người dùng Web App (Gradio)
+├── run_app.bat               # File nhấp đúp chạy nhanh Giao diện người dùng
 ├── venv/                     # Môi trường ảo Python
 ├── yolov12s-seg.pt           # File trọng số học trước (Pre-trained)
 ├── project_changes_log.txt   # Nhật ký quyết định kỹ thuật
@@ -52,7 +55,7 @@ python -m venv venv
 **Bước 4.3: Cài đặt mã nguồn lõi YOLOv12 và thư viện phụ trợ**
 *(Vì thư viện ultralytics mặc định chưa ổn định với YOLOv12, ta phải cài từ mã nguồn github gốc)*
 ```powershell
-.\venv\Scripts\python.exe -m pip install opencv-python pandas matplotlib pyyaml
+.\venv\Scripts\python.exe -m pip install opencv-python pandas matplotlib pyyaml gradio imageio imageio-ffmpeg
 cd yolov12
 ..\venv\Scripts\python.exe -m pip install -e .
 cd ..
@@ -86,7 +89,18 @@ $env:PYTHONIOENCODING="utf-8"
 .\venv\Scripts\python.exe scripts\evaluate.py
 ```
 
-## 8. Kết quả Thực nghiệm (Segmentation Mask)
+## 8. Hướng dẫn Khởi chạy Giao diện Người dùng (Web UI Gradio)
+Hệ thống cung cấp giao diện Web trực quan (xây dựng bằng thư viện Gradio) tích hợp đầy đủ 3 chế độ: **Ảnh**, **Video** và **Webcam trực tiếp**, cùng quy chuẩn phân loại 4 nhóm rác (Tái chế, Nguy hại, Hữu cơ, Vô cơ).
+
+- **Cách 1 (Nhanh nhất):** Nhấp đúp chuột vào file `run_app.bat` trên Windows.
+- **Cách 2 (Qua dòng lệnh PowerShell):**
+```powershell
+$env:PYTHONIOENCODING="utf-8"
+.\venv\Scripts\python.exe app.py
+```
+*(Trình duyệt sẽ tự động mở giao diện tại `http://127.0.0.1:7860`).*
+
+## 9. Kết quả Thực nghiệm (Segmentation Mask)
 - **Precision:** 83.5%
 - **Recall:** 76.9%
 - **F1-Score:** 0.801
@@ -94,7 +108,7 @@ $env:PYTHONIOENCODING="utf-8"
 - **Tốc độ (Inference Time):** ~19.6ms / ảnh (~51 FPS trên RTX 4050).
 *(Đạt độ chính xác cao hơn bài báo gốc dù sử dụng số lượng phân lớp nhiều gấp đôi).*
 
-## 9. Khắc phục sự cố thường gặp (Troubleshooting)
+## 10. Khắc phục sự cố thường gặp (Troubleshooting)
 - **Lỗi `module 'numpy' has no attribute 'trapz'`:** Do dùng numpy bản 2.x. Cách sửa: `pip install "numpy<2.0.0"`.
 - **Lỗi treo cứng máy / tràn Pagefile khi đang train:** Do cơ chế đa luồng của Windows ép tải thư viện PyTorch nhiều lần. Cách sửa: Bắt buộc thêm tham số `workers=0` vào hàm `model.train()`.
 - **Lỗi `No such file or directory: 'yolov12s-seg.pt'`:** Thư viện không tự tải được file trọng số do YOLOv12 quá mới. Cách sửa: Chủ động download file `.pt` từ github thả vào thư mục gốc.
